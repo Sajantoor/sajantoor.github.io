@@ -2,6 +2,8 @@ import React from 'react';
 // eslint-disable-next-line
 import styles from '../styles/landing.css';
 import mountainImg from '../assets/img/mountains.png';
+import { ReactComponent as TitleAsset } from '../assets/shapes/TitleAsset.svg';
+
 
 class Landing extends React.Component {
   constructor(props) {
@@ -23,6 +25,7 @@ class Landing extends React.Component {
         <div className="title-contain">
           <h1> Sajan Toor </h1>
           <h2> I'm a <span className="highlight"> {this.state.currentWord}. </span> </h2>
+          <TitleAsset/>
         </div>
         <img src={mountainImg} alt=""/>
       </div>

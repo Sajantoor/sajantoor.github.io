@@ -13,10 +13,16 @@
   text-align: center;
 }
 
+.title-contain h1::selection, .title-contain h2::selection, .title-contain span::selection  {
+  color: none;
+  background: none;
+}
+
 .title-contain h1 {
   font-family: 'Akrobat Bold';
   position: relative;
-  top: 18vh;
+  top: 23vh;
+  z-index: 1;
   font-size: 90pt;
   color: #dcdde1;
 }
@@ -25,7 +31,8 @@
   font-family: 'Akrobat Light';
   position: relative;
   color: #dcdde1;
-  top: 10vh;
+  z-index: 1;
+  top: 15vh;
   font-size: 32pt;
 }
 
@@ -36,6 +43,16 @@
 
 .landing img {
   position: absolute;
-  bottom: 0;
+  bottom: -20pt;
   z-index: 0;
+  width: 105%;
+  filter: drop-shadow(0px 0px 30px rgba(15, 242, 255, 0.25));
+}
+
+#titleAsset {
+  width: 250pt;
+  position: relative;
+  bottom: 18vh;
+  z-index: 0;
+  filter: drop-shadow(0px 0px 5px #0ff2ff);
 }
