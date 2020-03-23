@@ -1,0 +1,41 @@
+.landing {
+  width: 100%;
+  height: 100%;
+  position: absolute; top: 0; left: 0;
+  background-image: linear-gradient(#1f1f1e 10%, #151145 60%, #2e2244 90%);
+  background-color: #000;
+  overflow: hidden;
+}
+
+.title-contain {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+}
+
+.title-contain h1 {
+  font-family: 'Akrobat Bold';
+  position: relative;
+  top: 18vh;
+  font-size: 90pt;
+  color: #dcdde1;
+}
+
+.title-contain h2 {
+  font-family: 'Akrobat Light';
+  position: relative;
+  color: #dcdde1;
+  top: 10vh;
+  font-size: 32pt;
+}
+
+.highlight {
+  color: #0ff2ff;
+  text-shadow: 1px 1px 20px;
+}
+
+.landing img {
+  position: absolute;
+  bottom: 0;
+  z-index: 0;
+}
