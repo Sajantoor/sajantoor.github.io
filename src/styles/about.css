@@ -1,0 +1,60 @@
+.about {
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  background-color: #1f1f1e;
+}
+
+.about h1 {
+  color: #dcdde1;
+  font-size: 70pt;
+  margin-top: 20%;
+}
+
+.about p {
+  color: #dcdde1;
+  font-size: 18pt;
+}
+
+.about .left-contain {
+  width: 50%;
+  margin-left: 5%;
+}
+
+.about .left-contain p {
+  width: 80%;
+}
+
+.about button {
+  font-family: 'Akrobat Bold';
+  background-color: #dcdde1;
+  color: #1f1f1e;
+  opacity: 0.8;
+  padding: 15px 20px 15px 20px;
+  border-radius: 34px;
+  font-size: 20pt;
+}
+
+
+#github, .icons img {
+  height: 60px;
+  padding: 15px;
+  margin-right: 20px;
+}
+
+.about .right-contain {
+  float: right;
+  width: 40%;
+  position: relative;
+  bottom: 30vh;
+}
+
+.right-contain p {
+  padding-bottom: 20px;
+}
+
+.right-contain svg {
+  fill: #dcdde1;
+  float: left;
+  padding-right: 20px;
+}
