@@ -3,6 +3,7 @@ import React from 'react';
 import styles from '../styles/landing.css';
 import mountainImg from '../assets/img/mountains.png';
 import { ReactComponent as TitleAsset } from '../assets/shapes/TitleAsset.svg';
+import { isElementVisible } from '../App';
 
 
 class Landing extends React.Component {
@@ -21,7 +22,7 @@ class Landing extends React.Component {
 
   render() {
     return (
-      <div className="landing">
+      <div className="landing" ref="landing">
         <div className="title-contain">
           <h1> Sajan Toor </h1>
           <h2> I'm a <span className="highlight"> {this.state.currentWord}. </span> </h2>

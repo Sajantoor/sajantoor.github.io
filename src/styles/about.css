@@ -1,7 +1,7 @@
 .about {
   position: absolute;
-  height: 100vh;
-  width: 100vw;
+  min-height: 100vh;
+  min-width: 100vw;
   background-color: #1f1f1e;
 }
 
@@ -34,6 +34,11 @@
   opacity: 0.1;
 }
 
+.about .backgroundText::selection  {
+  color: none;
+  background: none;
+}
+
 .about p {
   color: #dcdde1;
   font-size: 18pt;
@@ -59,6 +64,14 @@
   padding: 15px 20px 15px 20px;
   border-radius: 34px;
   font-size: 20pt;
+  transition: all 0.5s;
+}
+
+.about button:hover {
+  opacity: 1; 
+  background-color: #0ff2ff;
+  color: #1f1f1e;
+  filter: drop-shadow(2px 2px 10px #0ff2ff);
 }
 
 #github, .icons img {
@@ -75,7 +88,7 @@
 }
 
 .right-contain p {
-  padding-bottom: 20px;
+  padding-bottom: 15px;
 }
 
 .right-contain svg {

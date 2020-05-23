@@ -35,16 +35,16 @@ class About extends React.Component {
             <p> sajantoor.business@gmail.com </p>
           </div>
           <div>
-            <Place/>
-            <p> Surrey, BC </p>
-          </div>
-          <div>
             <Code/>
             <p> 5 Years of Programming </p>
           </div>
           <div>
             <Settings/>
-            <p> 2 Years of VEX Competitive Robotics </p>
+            <p> 2 Years of VEX Robotics Competition </p>
+          </div>
+          <div>
+            <Place/>
+            <p> 27 Repositories </p>
           </div>
         </div>
       </div>

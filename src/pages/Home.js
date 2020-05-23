@@ -8,11 +8,11 @@ class Home extends React.Component {
     return(
       <React.Fragment>
         <Navigation/>
+        <Landing/>
         <About/>
       </React.Fragment>
     )
   }
 }
-
 
 export default Home;
