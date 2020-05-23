@@ -6,7 +6,7 @@ import { ReactComponent as Code } from '../assets/icons/code.svg';
 import { ReactComponent as Email } from '../assets/icons/email.svg';
 import { ReactComponent as Place } from '../assets/icons/place.svg';
 import { ReactComponent as Settings } from '../assets/icons/settings.svg';
-
+import { ReactComponent as AboutTitleAsset } from '../assets/shapes/AboutTitleAsset.svg';
 
 class About extends React.Component {
   render() {
@@ -14,28 +14,39 @@ class About extends React.Component {
       <div className="about">
 
         <div className="left-contain">
-          <h1> About Me </h1>
+          <div className="title">
+            <h1> About Me </h1>
+            <AboutTitleAsset/>
+          </div>
+          <h1 className="backgroundText"> About </h1>
           <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eu molestie neque, vitae commodo eros. Maecenas ex ante, molestie sed dolor id, feugiat feugiat elit. Sed auctor felis a nulla suscipit laoreet vitae nec odio. </p>
 
           <div className="icons">
             <a href="https://github.com/Sajantoor"> <GitHub/> </a>
-            <a href=""> <img src={LinkedIn}/> </a>
+            <img src={LinkedIn} alt="LinkedIn Logo"/>
           </div>
 
-          <a href=""> <button> Download Resume </button> </a>
+          <button> Download Resume </button>
         </div>
 
         <div className="right-contain">
-          <Email/>
-          <a> <p> sajantoor.business@gmail.com </p> </a>
-          <Place/>
-          <a> <p> Surrey, BC </p> </a>
-          <Code/>
-          <p> 5 Years of Programming </p>
-          <Settings/>
-          <p> 2 Years of VEX Robotics </p>
+          <div>
+            <Email/>
+            <p> sajantoor.business@gmail.com </p>
+          </div>
+          <div>
+            <Place/>
+            <p> Surrey, BC </p>
+          </div>
+          <div>
+            <Code/>
+            <p> 5 Years of Programming </p>
+          </div>
+          <div>
+            <Settings/>
+            <p> 2 Years of VEX Competitive Robotics </p>
+          </div>
         </div>
-
       </div>
     )
   }

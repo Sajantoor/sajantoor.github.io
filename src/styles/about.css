@@ -5,10 +5,33 @@
   background-color: #1f1f1e;
 }
 
-.about h1 {
+.about .title {
+  position: relative;
+  top: 40pt;
+  width: 60%;
+}
+
+.about .title svg {
+  width: 70%;
+  position: relative;
+  bottom: 60px;
+  filter: drop-shadow(2px 2px 20px #0ff2ff);
+}
+
+.about .title h1 {
   color: #dcdde1;
   font-size: 70pt;
   margin-top: 20%;
+}
+
+.about .backgroundText {
+  position: absolute;
+  color: #dcdde1;
+  font-family: 'Akrobat Black';
+  top: 13%;
+  left: 10%;
+  font-size: 150pt;
+  opacity: 0.1;
 }
 
 .about p {
@@ -23,6 +46,8 @@
 
 .about .left-contain p {
   width: 80%;
+  margin-bottom: 50px;
+  margin-top: 20px;
 }
 
 .about button {
@@ -30,11 +55,11 @@
   background-color: #dcdde1;
   color: #1f1f1e;
   opacity: 0.8;
+  margin-top: 20px;
   padding: 15px 20px 15px 20px;
   border-radius: 34px;
   font-size: 20pt;
 }
-
 
 #github, .icons img {
   height: 60px;
@@ -43,10 +68,10 @@
 }
 
 .about .right-contain {
-  float: right;
   width: 40%;
-  position: relative;
-  bottom: 30vh;
+  position: absolute;
+  right: 10pt;
+  top: 230pt;
 }
 
 .right-contain p {
