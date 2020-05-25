@@ -3,13 +3,20 @@ import React from 'react';
 import styles from '../styles/landing.css';
 import mountainImg from '../assets/img/mountains.png';
 import { ReactComponent as TitleAsset } from '../assets/shapes/TitleAsset.svg';
-import { isElementVisible } from '../App';
+import { ReactComponent as Asset1 } from '../assets/shapes/Asset 1.svg';
+import { ReactComponent as Asset2 } from '../assets/shapes/Asset 2.svg';
+import { ReactComponent as Asset3 } from '../assets/shapes/Asset 3.svg';
+import { ReactComponent as Asset4 } from '../assets/shapes/Asset 4.svg';
+import { ReactComponent as Asset5 } from '../assets/shapes/Asset 5.svg';
+import { ReactComponent as CircleAsset } from '../assets/shapes/Asset 6.svg';
+import { ReactComponent as DoubleCircle } from '../assets/shapes/Asset 7.svg';
+import { ReactComponent as DoubleTriangle } from '../assets/shapes/Asset 8.svg';
+import { ReactComponent as TripleTriangle } from '../assets/shapes/Asset 9.svg';
 
 
 class Landing extends React.Component {
   constructor(props) {
     super(props);
-
     this.state = {
       subtitle: ["Programmer", "Designer", "Student"],
       index: 0,
@@ -23,10 +30,24 @@ class Landing extends React.Component {
   render() {
     return (
       <div className="landing" ref="landing">
+        <div className="assets">
+          <Asset1/>
+          <Asset2/>
+          <Asset4/>
+          <Asset5/>
+          <CircleAsset id="leftCircle"/>
+          <CircleAsset id="rightCircle"/>
+          <DoubleCircle id="leftDoubleCircle"/>
+          <DoubleCircle id="rightDoubleCircle"/>
+        </div>
         <div className="title-contain">
           <h1> Sajan Toor </h1>
           <h2> I'm a <span className="highlight"> {this.state.currentWord}. </span> </h2>
           <TitleAsset/>
+          <Asset3/>
+          <DoubleTriangle/>
+          <TripleTriangle/>
+          <CircleAsset id="titleCircle"/>
         </div>
         <img src={mountainImg} alt=""/>
       </div>
