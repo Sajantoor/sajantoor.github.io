@@ -1,4 +1,5 @@
 import React from 'react';
+// eslint-disable-next-line
 import styles from '../styles/about.css';
 import { ReactComponent as GitHub } from '../assets/logos/GitHub.svg';
 import LinkedIn from '../assets/logos/LinkedIn.png';
@@ -7,6 +8,14 @@ import { ReactComponent as Email } from '../assets/icons/email.svg';
 import { ReactComponent as Place } from '../assets/icons/place.svg';
 import { ReactComponent as Settings } from '../assets/icons/settings.svg';
 import { ReactComponent as AboutTitleAsset } from '../assets/shapes/AboutTitleAsset.svg';
+import Halftones from '../assets/img/Halftones.png';
+
+const halftonesStyle = {
+  backgroundImage: `url(${Halftones})`,
+  backgroundPosition: 'center',
+  backgroundSize: 'cover',
+  backgroundRepeat: 'space'
+}
 
 class About extends React.Component {
   render() {
@@ -47,6 +56,7 @@ class About extends React.Component {
             <p> 27 Repositories </p>
           </div>
         </div>
+        <div style={halftonesStyle} className="halftonesBG"/> 
       </div>
     )
   }
