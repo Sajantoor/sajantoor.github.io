@@ -8,6 +8,7 @@ import { ReactComponent as Email } from '../assets/icons/email.svg';
 import { ReactComponent as Place } from '../assets/icons/place.svg';
 import { ReactComponent as Settings } from '../assets/icons/settings.svg';
 import { ReactComponent as AboutTitleAsset } from '../assets/shapes/AboutTitleAsset.svg';
+import { ReactComponent as TransitionAsset } from '../assets/shapes/Transition Asset.svg';
 import Halftones from '../assets/img/Halftones.png';
 
 const halftonesStyle = {
@@ -56,6 +57,7 @@ class About extends React.Component {
             <p> 27 Repositories </p>
           </div>
         </div>
+        <TransitionAsset/>
         <div style={halftonesStyle} className="halftonesBG"/> 
       </div>
     )
