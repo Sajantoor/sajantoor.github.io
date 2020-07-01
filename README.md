@@ -3,8 +3,8 @@
 
 #### Table of Contents
 * [About](#About)
-* [Design](#Design)
-* [Getting Started](#Getting-Started)
+* [Design](#-design)
+* [Getting Started](#-getting-Started)
 
 
 ## About
