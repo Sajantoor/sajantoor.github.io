@@ -1,4 +1,5 @@
 import React from 'react';
+// eslint-disable-next-line
 import styles from '../styles/navigation.css';
 
 class Navigation extends React.Component {

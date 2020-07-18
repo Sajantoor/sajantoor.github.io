@@ -1,7 +1,7 @@
 .about {
   position: absolute;
-  height: 100vh;
-  width: 100vw;
+  min-height: 100vh;
+  min-width: 100vw;
   background-color: #1e154c;
 }
 
@@ -104,6 +104,9 @@
 
 .right-contain p {
   color: #dcdde1;
+  position: relative;
+  top: 5px;
+  left: 10px;
   padding-bottom: 15px;
 }
 
@@ -120,4 +123,5 @@
   z-index: 2;
   overflow-y: visible;
   overflow-x: hidden;
+  bottom: 0;
 }
