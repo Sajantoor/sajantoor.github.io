@@ -1,42 +1,65 @@
+/* =========== 
+   Layout 
+   ============
+*/
+
 .landing {
+  height: auto;
+  width: auto;
   min-width: 100vw;
   min-height: 100vh;
   position: relative;
   background-image: linear-gradient(#1f1f1e 10%, #151145 60%, #2e2244 90%);
   background-color: #000;
-  overflow: hidden;
 }
 
 .title-contain {
   position: relative;
+  padding: 200px 0 200px 0;
+  width: 50%;
+  margin: auto;
   z-index: 1;
   text-align: center;
 }
 
+/* =========== 
+   Typography 
+   ============
+*/
+
 .title-contain h1::selection, .title-contain h2::selection, .title-contain span::selection  {
-  color: none;
   background: none;
 }
 
-.title-contain h1 {
+.title-contain h1, .title-contain h2 {
   font-family: 'Avenir LT Std';
-  position: relative;
-  top: 24vh;
+  position: absolute;
+  text-align: center;
+  width: 100%;
   z-index: 1;
-  font-size: 100pt;
+  word-break: keep-all;
+  white-space: nowrap;
+}
+
+
+.title-contain h1 {
+  font-size: 8.5em;
   color: #FFF;
-  text-shadow: 4px -2px 0px #ff1afc, 4px -2px 10px #ff1afc80, -3px 3px 0px #15fcff, -3px 3px 10px #15fcff80;
+  text-shadow: 4px -2px 0px #ff1afc, 
+               4px -2px 10px #ff1afc80, 
+               -3px 3px 0px #15fcff, 
+               -3px 3px 10px #15fcff80;
+  padding: 20px;
+  top: 1em;
 }
 
 .title-contain h2 {
-  font-family: 'Avenir LT Std';
+  font-size: 2.5em;
   font-style: italic;
   font-weight: 65;
-  position: relative;
   color: #dcdde1;
-  z-index: 1;
-  top: 15vh;
-  font-size: 32pt;
+  padding: 10px;
+  top: 9.2em;
 }
 
 .highlight {
@@ -44,19 +67,23 @@
   text-shadow: 1px 1px 20px;
 }
 
+/* =========== 
+   Images / Assets
+   ============
+*/
+
 .landing img {
   position: absolute;
-  bottom: -20pt;
+  bottom: 0;
   z-index: 0;
   width: 105%;
   filter: drop-shadow(0px 0px 30px rgba(15, 242, 255, 0.25));
 }
 
 #titleAsset {
-  width: 400pt;
   position: relative;
-  bottom: 30vh;
-  left: 0.5%;
+  bottom: 120px;
+  width: 400pt;
   z-index: 0;
 }
 
