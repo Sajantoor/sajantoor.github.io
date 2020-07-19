@@ -9,14 +9,8 @@ import { ReactComponent as Place } from '../assets/icons/place.svg';
 import { ReactComponent as Settings } from '../assets/icons/settings.svg';
 import { ReactComponent as AboutTitleAsset } from '../assets/shapes/AboutTitleAsset.svg';
 import { ReactComponent as TransitionAsset } from '../assets/shapes/Transition Asset.svg';
-import Halftones from '../assets/img/Halftones.png';
 
-const halftonesStyle = {
-  backgroundImage: `url(${Halftones})`,
-  backgroundPosition: 'center',
-  backgroundSize: 'cover',
-  backgroundRepeat: 'space'
-}
+
 
 class About extends React.Component {
   render() {
@@ -58,7 +52,6 @@ class About extends React.Component {
           </div>
         </div>
         <TransitionAsset/>
-        <div style={halftonesStyle} className="halftonesBG"/> 
       </div>
     )
   }
