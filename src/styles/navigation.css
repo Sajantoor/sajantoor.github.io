@@ -1,3 +1,8 @@
+/* =========== 
+   Layout 
+   ============
+*/
+
 .navigation {
   position: absolute;
   top: 0px;
@@ -5,6 +10,11 @@
   z-index: 10;
   display: block;
 }
+
+/* =========== 
+   Typography 
+   ============
+*/
 
 .navigation h1 {
   color: #9a9a9b;

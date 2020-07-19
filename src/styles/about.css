@@ -1,72 +1,97 @@
+/* =========== 
+   Layout 
+   ============
+*/
+
 .about {
   position: absolute;
-  min-height: 100vh;
+  height: auto;
+  width: auto;
   min-width: 100vw;
+  min-height: 100vh;
   background-color: #1e154c;
+  padding-top: 5%;
 }
 
-.halftonesBG {
-  position: absolute;
-  top: 0; bottom: 0; left: 0; right: 0;
-  overflow: hidden;
-  height: 100%;
-  width: 100%;
-  z-index: 0;
-}
-
-.about .title {
+.title {
   position: relative;
-  top: 10pt;
   width: 60%;
   z-index: 1;
 }
 
-.about .title svg {
-  width: 70%;
+.left-contain {
   position: relative;
-  bottom: 60px;
-  filter: drop-shadow(2px 2px 20px #0ff2ff);
+  width: 50%;
+  margin-left: 8%;
+  margin-bottom: 15%;
+  z-index: 1;
 }
+
+.right-contain {
+  width: 40%;
+  position: absolute;
+  right: 0rem; 
+  top: calc(20% + 5em);
+  z-index: 1;
+  margin-bottom: 15%;
+}
+
+/* =========== 
+   Typography 
+   ============
+*/
+
 
 .about .title h1 {
   color: #dcdde1;
-  font-size: 70pt;
-  margin-top: 20%;
+  font-size: 5em;
 }
 
 .about .backgroundText {
   position: absolute;
   color: #dcdde1;
   font-family: 'Akrobat Black';
-  bottom: -2%;
+  bottom: -15%;
   left: 5%;
-  font-size: 160pt;
+  font-size: 13.5em;
   opacity: 0.15;
+  z-index: -2;
 }
 
 .about .backgroundText::selection  {
-  color: none;
   background: none;
 }
 
 .about p {
   color: #dcdde1;
-  font-size: 18pt;
-}
-
-.about .left-contain {
-  width: 50%;
-  margin-left: 8%;
-  position: relative;
-  z-index: 1;
+  font-size: 1.5em;
+  padding: 10px;
 }
 
 .about .left-contain p {
   position: relative;
   width: 80%;
-  margin-bottom: 35px;
-  margin-top: 10px;
-  bottom: 0px;
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+
+.right-contain p {
+  color: #dcdde1;
+  position: relative;
+  bottom: 5px;
+  padding-bottom: 15px;
+}
+
+/* =========== 
+   Components 
+   ============
+*/
+
+.right-contain svg {
+  fill: #dcdde1;
+  opacity: 0.5;
+  float: left;
+  padding-right: 30px;
 }
 
 .about button {
@@ -94,33 +119,31 @@
   margin-right: 20px;
 }
 
-.about .right-contain {
-  width: 40%;
+/* =========== 
+   Assets 
+   ============
+*/
+
+.about .title svg {
+  width: 70%;
+  top: calc(20% + 6em);
   position: absolute;
-  right: 10pt;
-  top: 210pt;
-  z-index: 1;
+  filter: drop-shadow(2px 2px 20px #0ff2ff);
 }
 
-.right-contain p {
-  color: #dcdde1;
-  position: relative;
-  top: 5px;
-  left: 10px;
-  padding-bottom: 15px;
-}
-
-.right-contain svg {
-  fill: #dcdde1;
-  opacity: 0.5;
-  float: left;
-  padding-right: 20px;
+.halftonesBG {
+  position: absolute;
+  top: 0; bottom: 0; left: 0; right: 0;
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+  z-index: 0;
 }
 
 .transitionAsset {
   position: absolute;
   width: 100%;
-  z-index: 2;
+  z-index: 1;
   overflow-y: visible;
   overflow-x: hidden;
   bottom: 0;
