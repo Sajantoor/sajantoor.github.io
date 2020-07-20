@@ -22,12 +22,5 @@ button, input[type="submit"], input[type="reset"] {
 	height: 100%;
 	width: 100%;
 	z-index: 2;
-	animation: halftonesAnimation 50s linear infinite;
+	mix-blend-mode: soft-light;
 }
-
-
-@keyframes halftonesAnimation {
-	100% {
-	 background-position: -1000px 1000px;
-   }
- }

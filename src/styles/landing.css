@@ -9,7 +9,7 @@
   min-width: 100vw;
   min-height: 100vh;
   position: relative;
-  background-image: linear-gradient(#1f1f1e 10%, #151145 60%, #2e2244 90%);
+  background-image: radial-gradient(#020331 10%, #000000 120%);
   background-color: #000;
 }
 
@@ -87,3 +87,37 @@
   z-index: 1;
 }
 
+#asset1 {
+  position: absolute;
+  width: 80px;
+  left: 12rem;
+  top: 5rem;
+}
+
+#tripleTriangle {
+  position: absolute;
+  width: 80px;
+  right: 8rem;
+  top: 5rem;
+}
+
+#doubleTriangle {
+  position: absolute;
+  width: 80px;
+  left: 5rem;
+  top: 25%;
+}
+
+#asset2 {
+  position: absolute;
+  width: 80px;
+  left: 5rem;
+  top: 27rem;
+}
+
+#circle {
+  position: absolute;
+  width: 30px;
+  left: 13rem;
+  top: 35rem;
+}

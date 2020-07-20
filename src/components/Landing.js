@@ -3,6 +3,11 @@ import React from 'react';
 import styles from '../styles/landing.css';
 import mountainImg from '../assets/img/mountains.png';
 import { ReactComponent as TitleAsset } from '../assets/shapes/TitleAsset.svg';
+import { ReactComponent as Asset1 } from '../assets/shapes/Asset_1.svg';
+import { ReactComponent as Asset2 } from '../assets/shapes/Asset_2.svg';
+import { ReactComponent as TripleTriangle } from '../assets/shapes/TripleTriangle.svg';
+import { ReactComponent as DoubleTriangle } from '../assets/shapes/DoubleTriangle.svg';
+import { ReactComponent as Circle } from '../assets/shapes/Circle.svg';
 
 
 class Landing extends React.Component {
@@ -25,6 +30,11 @@ class Landing extends React.Component {
           <h1> Sajan Toor </h1>
           <h2> I'm a <span className="highlight"> {this.state.currentWord}. </span> </h2>
           <TitleAsset/>
+          <Asset1/>
+          <TripleTriangle/>
+          <DoubleTriangle/>
+          <Asset2/>
+          <Circle/>
         </div>
         <img src={mountainImg} alt=""/>
       </div>

@@ -5,7 +5,7 @@ const halftonesStyle = {
     backgroundImage: `url(${Halftones})`,
     backgroundPosition: 'center',
     backgroundSize: 'cover',
-    backgroundRepeat: 'repeat'
+    backgroundRepeat: 'repeat',
 }
 
 function halftones() {
