@@ -4,7 +4,7 @@
 */
 
 .about {
-  position: absolute;
+  position: relative;
   height: auto;
   width: auto;
   min-width: 100vw;

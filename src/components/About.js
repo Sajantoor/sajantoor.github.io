@@ -16,7 +16,6 @@ class About extends React.Component {
   render() {
     return(
       <div className="about">
-
         <div className="left-contain">
           <div className="title">
             <h1> About Me </h1>
