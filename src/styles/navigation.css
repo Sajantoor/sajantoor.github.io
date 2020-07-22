@@ -18,7 +18,8 @@
 */
 
 .navigation h1 {
-  color: #9a9a9b;
+  color: #FFF;
+  opacity: 0.5;
   font-family: 'Akrobat Light', sans-serif;
   padding: 5px;
   padding-right: 4%;

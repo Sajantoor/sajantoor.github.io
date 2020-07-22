@@ -19,13 +19,13 @@ class Projects extends React.Component {
                     <h2 className={!this.state.more ? "projectSub" : "subMore" }> { this.props.subtitle } </h2>
                     
                     <div className="imgContain"> 
-                        <img src={this.props.img}/>
+                        <img className={!this.state.more ? "img" : "imgMore"} src={this.props.img}/>
                     </div>
                     
                     {this.state.more && 
                         <React.Fragment>
-                            <p className="description"> {this.state.description} </p> 
-                            <button classsName="link"> {this.props.link} </button> 
+                            <p className="description"> {this.props.description} </p> 
+                            <a href={this.props.link}> <button classsName="link"> {this.props.linkText} </button> </a>
                         </React.Fragment>
                     }
                 </div>
@@ -34,7 +34,7 @@ class Projects extends React.Component {
                     {!this.state.more && 
                         <p className="caption"> {this.props.caption} </p> 
                     }
-
+                    
                     <button className="embed"> {this.props.embed} </button>
                     
                     <button className="more" onClick={() => this.setState({more: !this.state.more})}> {!this.state.more ? "MORE" : "X"} </button>
