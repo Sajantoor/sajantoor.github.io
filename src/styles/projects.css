@@ -4,21 +4,26 @@
 */
 
 .projects {
-    position: relative;
-    margin: 15% 15% 10% 18%;
-    width: 80%;
+    margin: 15rem;
+    margin-right: 10rem;
 }
 
 .projectContain {
     position: relative;
-    width: 73.6%;
-    margin-top: 0;
-    margin-bottom: -20rem;
+    width: calc(100% - 15rem);
+    min-height: 40rem;
+    filter: drop-shadow(10px 10px 50px rgba(0, 0, 0, 0.5));
 }
 
 .projectCaption {
-    width: 73.6%;
     position: relative;
+    width: calc(100% - 15rem);
+}
+
+.imgContain {
+    position: absolute;
+    top: 0; bottom: 0; left: 0; right: 0;
+    overflow: hidden;
 }
 
 
@@ -43,40 +48,33 @@
 }
 
 .projectTitle {
-    text-shadow: 0 5px 8px rgba(0, 0, 0, 0.4);
-    font-size: 7em;
+    text-shadow: 0 5px 8px rgba(0, 0, 0, 0.6);
+    font-size: 8em;
     width: 25%;
     line-height: 1;
-    margin-left: -12rem;
-    margin-bottom: -10rem;
-    padding: 10px;
-    top: 8rem;
+    margin-left: -8rem;
+    margin-bottom: 1rem;
+    top: 10rem;
 }
 
 .projectSub {
-    text-shadow: 0 2px 2px rgba(0, 0, 0, 0.4);
-    margin-left: -11.5rem;
-    margin-top: 10rem;
-    padding: 10px;
-    top: 8rem;
+    text-shadow: 0 2px 2px rgba(0, 0, 0, 0.6);
+    margin-left: -7.5rem;
+    top: 9rem;
+    font-size: 2.5em;
 }
 
 .titleMore {
-    margin-left: 3rem;
-    bottom: 6rem;
     font-size: 4.5em;
 }
 
 .subMore {
-    margin-left: 3rem;
-    bottom: 9rem;
+
 }
 
 .description {
     font-family: 'Akrobat';
     font-size: 1.3em;
-    top: 10rem;
-    padding: 1rem 8rem 2rem 3rem;
 }
 
 .caption, .more {
@@ -87,15 +85,11 @@
 .caption {
     font-family: 'Akrobat Semibold';
     font-size: 1.3em;
-    width: 60%;
-    float: left;
 }
 
 .more {
     font-family: 'Akrobat Bold';
     font-size: 1.5em;
-    float: right;
-    padding: 20px;
     position: relative;
 }
 
@@ -104,15 +98,6 @@
    Assets 
    ============
 */
-
-.imgContain {
-    width: 100%;
-    height: 40rem;
-    position: relative;
-    bottom: 21rem;
-    overflow: hidden;
-    filter: drop-shadow(10px 10px 50px rgba(0, 0, 0, 0.5));
-}
 
 .img, .imgMore {
     position: absolute;
@@ -123,6 +108,6 @@
 }
 
 .imgMore {
-    opacity: 0.5;
+    opacity: 0.4;
     filter: blur(10px);
 }

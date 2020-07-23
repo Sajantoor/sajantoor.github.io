@@ -15,12 +15,8 @@ class Projects extends React.Component {
         return(
             <div className="projects">
                 <div className="projectContain">
-                    <h1 className={!this.state.more ? "projectTitle" : "titleMore" }> { this.props.title } </h1> 
+                    <h1 className={!this.state.more ? "projectTitle" : "titleMore" }> { this.props.title } </h1>
                     <h2 className={!this.state.more ? "projectSub" : "subMore" }> { this.props.subtitle } </h2>
-                    
-                    <div className="imgContain"> 
-                        <img className={!this.state.more ? "img" : "imgMore"} src={this.props.img}/>
-                    </div>
                     
                     {this.state.more && 
                         <React.Fragment>
@@ -28,6 +24,10 @@ class Projects extends React.Component {
                             <a href={this.props.link}> <button classsName="link"> {this.props.linkText} </button> </a>
                         </React.Fragment>
                     }
+
+                    <div className="imgContain"> 
+                        <img className={!this.state.more ? "img" : "imgMore"} src={this.props.img}/>
+                    </div>
                 </div>
 
                 <div className="projectCaption">

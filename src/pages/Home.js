@@ -14,8 +14,8 @@ class Home extends React.Component {
         <Landing/>
         <About/>
         <Projects
-          title="VEX Robotics Competition" 
-          subtitle="Tracking the COVID-19 Pandemic"
+          title="Coronavirus Tracker" 
+          subtitle="Tracking the Coronavirus Pandemic"
           img="https://images.unsplash.com/photo-1550645612-83f5d594b671?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80"
           caption="Visualizing and making COVID-19 information accessible"
           description="The Coronavirus Tracker project is used to visualize and track the COVID-19 (Coronavirus) pandemic. The goal of 
