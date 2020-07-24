@@ -21,12 +21,12 @@ class Projects extends React.Component {
                     {this.state.more && 
                         <React.Fragment>
                             <p className="description"> {this.props.description} </p> 
-                            <a href={this.props.link}> <button classsName="link"> {this.props.linkText} </button> </a>
+                            <a target="_blank" rel="noopener noreferrer" href={this.props.link}> <button className="link"> {this.props.linkText} </button> </a>
                         </React.Fragment>
                     }
 
                     <div className="imgContain"> 
-                        <img className={!this.state.more ? "img" : "imgMore"} src={this.props.img}/>
+                        <img className={!this.state.more ? "img" : "imgMore"} src={this.props.img} alt=""/>
                     </div>
                 </div>
 
