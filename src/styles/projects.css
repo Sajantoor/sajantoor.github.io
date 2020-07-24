@@ -10,20 +10,27 @@
 
 .projectContain {
     position: relative;
-    width: calc(100% - 15rem);
+    width: calc(100% - 10rem);
     min-height: 40rem;
     filter: drop-shadow(10px 10px 50px rgba(0, 0, 0, 0.5));
 }
 
 .projectCaption {
     position: relative;
-    width: calc(100% - 15rem);
+    width: calc(100% - 10rem);
 }
 
 .imgContain {
     position: absolute;
     top: 0; bottom: 0; left: 0; right: 0;
     overflow: hidden;
+}
+
+.projectIcons {
+    position: relative;
+    z-index: 2;
+    height: 70px;
+    margin-bottom: 1rem;
 }
 
 
@@ -79,7 +86,7 @@
 .description {
     font-family: 'Akrobat';
     font-size: 1.3em;
-    padding: 0rem 2rem 2rem 3rem;
+    padding: 0rem 3rem 0rem 3rem;
 }
 
 .caption, .more {
@@ -98,7 +105,7 @@
     font-size: 1.5em;
     position: relative;
     float: right;
-    margin-top: 1rem;
+    margin: 1rem;
 }
 
 /* =========== 
@@ -119,6 +126,14 @@
     margin: 1rem 3rem 2rem 3rem;
 }
 
+.embed {
+    position: relative;
+    fill: #FFF;
+    opacity: 0.5;
+    float: right;
+    margin: 0.9rem 1rem 1rem 1rem;
+}
+
 
 /* =========== 
    Assets 
@@ -136,4 +151,15 @@
 .imgMore {
     opacity: 0.3;
     filter: blur(10px);
+}
+
+.projectIcons svg {
+    float: left;
+    height: 50px;
+    display: block;
+    margin: 1rem;
+}
+
+.projectIcons svg:first-of-type {
+    margin-left: 2rem;
 }
