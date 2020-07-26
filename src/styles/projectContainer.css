@@ -1,0 +1,69 @@
+/* =========== 
+   Layout 
+   ============
+*/
+
+.projectContainer {
+    background-color: #4834d4;
+    width: 100vw;
+    min-height: 100vh;
+    position: relative;
+}
+
+.projectPosition {
+    position: absolute;
+    right: 10rem;
+    top: 19rem;
+}
+
+/* =========== 
+   Typography 
+   ============
+*/
+
+.numerator, .denominator {
+    font-family: 'Akrobat Bold';
+    font-size: 2.5em;
+    color: #FFF;
+    position: relative;
+
+}
+
+.numerator {
+    right: 1.5rem;
+}
+
+.denominator {
+    left: 0.2rem;
+    bottom: 1rem;
+}
+
+
+/* =========== 
+   Dividers 
+   ============
+*/
+
+.numerator::after {
+    content: '';
+    width: 3px;
+    display: block;
+    height: 60px;
+    position: absolute;
+    background-color: #0ff2ff;
+    border-radius: 3px;
+    transform: rotate(45deg);
+    right: -0.2rem;
+    top: 1.5rem;
+}
+
+.projectPosition::after {
+    content: '';
+    width: 1px;
+    display: block;
+    height: calc(100vh - 26rem);
+    background-color: #FFF;
+    position: absolute;
+    top: 10rem;
+    opacity: 0.2;
+}
