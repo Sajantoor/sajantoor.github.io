@@ -15,6 +15,7 @@ class Projects extends React.Component {
 
     componentWillMount() {
         window.addEventListener('scroll', this.scroll);
+        console.log(document.styleSheets);
     }
 
     scroll() {
