@@ -18,20 +18,23 @@ class Projects extends React.Component {
     }
 
     scroll() {
+        
         let element = this.refs.projects;
         let boundingClient = element.getBoundingClientRect(); 
         let elementTopPos = boundingClient.top;
         let elementBottomPos = boundingClient.bottom;
-
-        console.log(elementBottomPos);
-
+        // 0 is when in view 300 is a little earlier so it's complete due to the time of the animation
         if (elementTopPos < 300 && elementBottomPos >= 300) {
+            // update background color if avaiable
             if (this.props.backgroundColor) {
                 element.parentNode.style.backgroundColor = this.props.backgroundColor;
-
             } else {
                 element.parentNode.removeAttribute('style');
             }
+            // get the element in view's index
+            let parent = element.parentNode;
+            let index = Array.prototype.indexOf.call(parent.children, element);
+            this.props.giveParentCurrentIndex(index);
         }
     }
 

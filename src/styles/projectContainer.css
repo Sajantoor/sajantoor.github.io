@@ -8,7 +8,7 @@
     width: 100vw;
     min-height: 100vh;
     position: relative;
-    transition: background-color 0.8s;
+    transition: background-color 1s;
 }
 
 .projectPosition {
@@ -70,7 +70,7 @@
     content: '';
     width: 1px;
     display: block;
-    height: calc(100vh - 26rem);
+    height: calc(100vh - 20rem);
     background-color: #FFF;
     position: absolute;
     top: 10rem;

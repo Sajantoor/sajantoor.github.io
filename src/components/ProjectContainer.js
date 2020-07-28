@@ -11,18 +11,30 @@ class ProjectContainer extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-
+            numeratorNum: 1,
+            denominatorNum: 1,
         }
+    }
+    // gets index of the child the user is viewing and adds it to state
+    getCurrentIndex = (dataFromChild) => {
+        this.setState({numeratorNum: dataFromChild});
+    }
+
+    // calculates denominator excluding 1 child element
+    componentDidMount() {
+        let el = this.refs.projectContainer;
+        let childCount = el.children.length;
+        this.setState({denominatorNum: childCount - 1});
     }
 
     render() {
         const CoronavirusComponents = [ {link: "https://reactjs.org/", component: <ReactIcon/>}, {link: "https://developers.google.com/maps/documentation", component: <GoogleMaps/>}, {link: "https://deck.gl/", component: <Uber/>},]
 
         return(
-            <div className="projectContainer"> 
+            <div className="projectContainer" ref="projectContainer"> 
                 <div className="projectPosition">
-                    <h1 className="numerator"> 1 </h1>
-                    <h1 className="denominator"> 5 </h1>
+                    <h1 className="numerator"> {this.state.numeratorNum} </h1>
+                    <h1 className="denominator"> {this.state.denominatorNum} </h1>
                 </div>
                 <Projects
                     title="Coronavirus Tracker" 
@@ -35,6 +47,7 @@ class ProjectContainer extends React.Component {
                     embed="https://sajantoor.github.io/Coronavirus-Tracker/"
                     icons={CoronavirusComponents}
                     backgroundColor={"#4834d4"}
+                    giveParentCurrentIndex={this.getCurrentIndex.bind(this)}
                 />
 
                 <Projects
@@ -47,7 +60,8 @@ class ProjectContainer extends React.Component {
                     link="https://github.com/Sajantoor/Coronavirus-Tracker"
                     embed="https://sajantoor.github.io/Coronavirus-Tracker/"
                     icons={CoronavirusComponents}
-                    backgroundColor={"#000"}
+                    backgroundColor={"#8e7aff"}
+                    giveParentCurrentIndex={this.getCurrentIndex.bind(this)}
                 />
             </div>   
         )
