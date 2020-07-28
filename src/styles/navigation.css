@@ -17,17 +17,46 @@
    ============
 */
 
-.navigation h1 {
+.navButton {
   color: #FFF;
   opacity: 0.5;
   font-family: 'Akrobat Light', sans-serif;
   padding: 5px;
   padding-right: 4%;
+  padding-top: 20px;
   font-size: 20pt;
   float: right;
+  transition: all 0.3s;
 }
 
-.navigation h1::selection {
+.navButton {
   color: none;
   background-color: none;
+}
+
+
+.navButton:hover, .navButton:focus, .focus {
+  opacity: 1;
+}
+
+.navButton::after, .focus::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 3px;
+  margin-top: 5px;
+  background-color: #0ff2ff;
+  transition: all 0.3s;
+  opacity: 0;
+  transform: translateY(-10px);
+}
+
+
+.navButton:hover::after, .navButton:focus::after, .focus::after {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.focus:hover::after {
+  background-color: #ccf8fc;
 }

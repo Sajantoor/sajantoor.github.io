@@ -18,7 +18,6 @@ class Projects extends React.Component {
     }
 
     scroll() {
-        
         let element = this.refs.projects;
         let boundingClient = element.getBoundingClientRect(); 
         let elementTopPos = boundingClient.top;
