@@ -7,14 +7,37 @@ import { ReactComponent as Link } from '../assets/icons/link.svg';
 class Projects extends React.Component {
     constructor(props) {
         super(props); 
+        this.scroll = this.scroll.bind(this);
         this.state = {
             more: false,
         }
     }
 
+    componentWillMount() {
+        window.addEventListener('scroll', this.scroll);
+    }
+
+    scroll() {
+        let element = this.refs.projects;
+        let boundingClient = element.getBoundingClientRect(); 
+        let elementTopPos = boundingClient.top;
+        let elementBottomPos = boundingClient.bottom;
+
+        console.log(elementBottomPos);
+
+        if (elementTopPos < 300 && elementBottomPos >= 300) {
+            if (this.props.backgroundColor) {
+                element.parentNode.style.backgroundColor = this.props.backgroundColor;
+
+            } else {
+                element.parentNode.removeAttribute('style');
+            }
+        }
+    }
+
     render() {
         return(
-            <div className="projects">
+            <div className="projects" ref="projects">
                 <div className="projectContain">
                     <h1 className={!this.state.more ? "projectTitle" : "titleMore" }> { this.props.title } </h1>
                     <h2 className={!this.state.more ? "projectSub" : "subMore" }> { this.props.subtitle } </h2>
@@ -37,7 +60,6 @@ class Projects extends React.Component {
                     <div className="imgContain"> 
                         <img className={!this.state.more ? "img" : "imgMore"} src={this.props.img} alt=""/>
                     </div>
-                    
                 </div>
 
                 <div className="projectCaption">

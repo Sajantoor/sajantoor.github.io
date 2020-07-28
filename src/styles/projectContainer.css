@@ -8,12 +8,21 @@
     width: 100vw;
     min-height: 100vh;
     position: relative;
+    transition: background-color 0.8s;
 }
 
 .projectPosition {
-    position: absolute;
-    right: 10rem;
-    top: 19rem;
+    position: sticky;
+    float: right;
+    right: 8rem;
+    top: 5rem;
+    margin-top: 18rem;
+}
+
+.projectScroll {
+    position: fixed;
+    right: 9rem;
+    top: 4rem;
 }
 
 /* =========== 
@@ -57,7 +66,7 @@
     top: 1.5rem;
 }
 
-.projectPosition::after {
+.projectPosition::after, .projectScroll::after {
     content: '';
     width: 1px;
     display: block;

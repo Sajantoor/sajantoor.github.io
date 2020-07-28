@@ -4,7 +4,11 @@
 */
 
 .projects {
-    padding: 15rem 10rem 30rem 15rem;
+    padding: 15rem 10rem 12rem 15rem;
+}
+
+.projects:last-of-type {
+    padding-bottom: 10rem;
 }
 
 .projectContain {
@@ -74,6 +78,7 @@
     font-size: 4.5em;
     padding: 2rem 3rem 0rem 3rem;
     margin-bottom: 0.3rem;
+    margin-top: 5.4rem;
 }
 
 .subMore {
