@@ -8,18 +8,18 @@ class Projects extends React.Component {
     constructor(props) {
         super(props); 
         this.scroll = this.scroll.bind(this);
+        this.myRef = React.createRef();
         this.state = {
             more: false,
         }
     }
 
-    componentWillMount() {
+    componentDidMount() {
         window.addEventListener('scroll', this.scroll);
-        console.log(document.styleSheets);
     }
 
     scroll() {
-        let element = this.refs.projects;
+        let element = this.myRef.current;
         let boundingClient = element.getBoundingClientRect(); 
         let elementTopPos = boundingClient.top;
         let elementBottomPos = boundingClient.bottom;
@@ -40,7 +40,7 @@ class Projects extends React.Component {
 
     render() {
         return(
-            <div className="projects" ref="projects">
+            <div className="projects" ref={this.myRef}>
                 <div className="projectContain">
                     <h1 className={!this.state.more ? "projectTitle" : "titleMore" }> { this.props.title } </h1>
                     <h2 className={!this.state.more ? "projectSub" : "subMore" }> { this.props.subtitle } </h2>
@@ -51,7 +51,7 @@ class Projects extends React.Component {
                 
                                 { this.props.icons && 
                                     <div className="projectIcons"> 
-                                     { this.props.icons.map((Component, key) => (<a target="_blank" rel="noopener noreferrer" href={Component.link}> {Component.component} </a> )) }
+                                     { this.props.icons.map((Component, key) => (<a target="_blank" rel="noopener noreferrer" href={Component.link} key={key}> {Component.component} </a> )) }
                                      </div> 
                                 } 
                       

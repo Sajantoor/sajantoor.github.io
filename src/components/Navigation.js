@@ -5,6 +5,7 @@ import styles from '../styles/navigation.css';
 class Navigation extends React.Component {
   constructor(props) {
     super(props);
+    this.myRef = React.createRef();
     this.checkScroll = this.checkScroll.bind(this);
     this.state = {
       scrollPosition: 0,
@@ -26,7 +27,7 @@ class Navigation extends React.Component {
   }
 
   checkScroll() {
-    let element = this.refs.navigation;
+    let element = this.myRef.current;
     let siblings = element.parentNode.children;
     // home = 1 / about =  2 / project = 3 
     for (let i = 1; i < siblings.length; i++) {
@@ -55,7 +56,7 @@ class Navigation extends React.Component {
   
   // scrolls to a certain element
   goTo(pos) {
-    let thisElement = this.refs.navigation; 
+    let thisElement = this.myRef.current; 
     let siblings = thisElement.parentNode.children;
     let plusConstant; // constant used so user sees all the content needed based on element
     // depending on element index
@@ -76,7 +77,7 @@ class Navigation extends React.Component {
 
   render() {
     return(
-      <div className="navigation" ref="navigation">
+      <div className="navigation" ref={this.myRef}>
         <button className={(this.state.scrollPosition === 3) ? "navButton focus" : "navButton"} onClick={() => this.goTo(3)}> Projects </button>
         <button className={(this.state.scrollPosition === 2) ? "navButton focus" : "navButton"} onClick={() => this.goTo(2)}> About </button>
         <button className={(this.state.scrollPosition === 1) ? "navButton focus" : "navButton"} onClick={() => this.goTo(1)}>  Home </button>

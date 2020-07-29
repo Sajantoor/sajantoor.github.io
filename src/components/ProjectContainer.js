@@ -10,6 +10,7 @@ import { ReactComponent as Uber } from '../assets/logos/Uber.svg';
 class ProjectContainer extends React.Component {
     constructor(props) {
         super(props);
+        this.myRef = React.createRef();
         this.state = {
             numeratorNum: 1,
             denominatorNum: 1,
@@ -22,7 +23,7 @@ class ProjectContainer extends React.Component {
 
     // calculates denominator excluding 1 child element
     componentDidMount() {
-        let el = this.refs.projectContainer;
+        let el = this.myRef.current;
         let childCount = el.children.length;
         this.setState({denominatorNum: childCount - 1});
     }
@@ -31,7 +32,7 @@ class ProjectContainer extends React.Component {
         const CoronavirusComponents = [ {link: "https://reactjs.org/", component: <ReactIcon/>}, {link: "https://developers.google.com/maps/documentation", component: <GoogleMaps/>}, {link: "https://deck.gl/", component: <Uber/>},]
 
         return(
-            <div className="projectContainer" ref="projectContainer"> 
+            <div className="projectContainer" ref={this.myRef}> 
                 <div className="projectPosition">
                     <h1 className="numerator"> {this.state.numeratorNum} </h1>
                     <h1 className="denominator"> {this.state.denominatorNum} </h1>

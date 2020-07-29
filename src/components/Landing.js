@@ -13,6 +13,7 @@ import { ReactComponent as Circle } from '../assets/shapes/Circle.svg';
 class Landing extends React.Component {
   constructor(props) {
     super(props);
+
     this.state = {
       subtitle: ["Programmer", "Designer", "Student"],
       index: 0,
@@ -25,7 +26,7 @@ class Landing extends React.Component {
 
   render() {
     return (
-      <div className="landing" ref="landing">
+      <div className="landing">
         <div className="title-contain">
           <h1> Sajan Toor </h1>
           <h2> I'm a <span className="highlight"> {this.state.currentWord}. </span> </h2>
