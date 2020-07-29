@@ -11,6 +11,10 @@
     padding-bottom: 10rem;
 }
 
+.projects:first-of-type {
+    padding-top: 0rem;
+}
+
 .projectContain {
     position: relative;
     width: calc(100% - 10rem);
