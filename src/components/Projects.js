@@ -34,7 +34,6 @@ class Projects extends React.Component {
             // get the element in view's index
             let parent = element.parentNode;
             let index = Array.prototype.indexOf.call(parent.children, element);
-            this.props.giveParentCurrentIndex(index);
         }
     }
 

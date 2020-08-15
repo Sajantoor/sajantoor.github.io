@@ -11,21 +11,11 @@ class ProjectContainer extends React.Component {
     constructor(props) {
         super(props);
         this.myRef = React.createRef();
-        this.state = {
-            numeratorNum: 1,
-            denominatorNum: 1,
-        }
     }
-    // gets index of the child the user is viewing and adds it to state
-    getCurrentIndex = (dataFromChild) => {
-        this.setState({numeratorNum: dataFromChild});
-    }
-
     // calculates denominator excluding 1 child element
     componentDidMount() {
         let el = this.myRef.current;
         let childCount = el.children.length;
-        this.setState({denominatorNum: childCount - 1});
     }
 
     render() {
@@ -33,10 +23,6 @@ class ProjectContainer extends React.Component {
 
         return(
             <div className="projectContainer" ref={this.myRef}> 
-                <div className="projectPosition">
-                    <h1 className="numerator"> {this.state.numeratorNum} </h1>
-                    <h1 className="denominator"> {this.state.denominatorNum} </h1>
-                </div>
                 <Projects
                     title="Coronavirus Tracker" 
                     subtitle="Tracking the Pandemic"
@@ -48,7 +34,6 @@ class ProjectContainer extends React.Component {
                     embed="https://sajantoor.github.io/Coronavirus-Tracker/"
                     icons={CoronavirusComponents}
                     backgroundColor={"#4834d4"}
-                    giveParentCurrentIndex={this.getCurrentIndex.bind(this)}
                 />
 
                 <Projects
@@ -62,7 +47,6 @@ class ProjectContainer extends React.Component {
                     embed="https://sajantoor.github.io/Coronavirus-Tracker/"
                     icons={CoronavirusComponents}
                     backgroundColor={"#8e7aff"}
-                    giveParentCurrentIndex={this.getCurrentIndex.bind(this)}
                 />
             </div>   
         )
