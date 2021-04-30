@@ -8,32 +8,32 @@
   height: auto;
   width: auto;
   min-width: 100vw;
-  min-height: 100vh;
   background-color: #1e154c;
   padding-top: 5%;
 }
 
 .title {
   position: relative;
-  width: 60%;
+  width: 100%;
   z-index: 1;
+  word-break: keep-all;
+  white-space: nowrap;
 }
 
 .left-contain {
   position: relative;
   width: 50%;
+  display: inline-block;
   margin-left: 8%;
-  margin-bottom: 15%;
   z-index: 2;
 }
 
 .right-contain {
   width: 40%;
-  position: absolute;
-  right: 0rem; 
-  top: calc(20% + 5em);
+  position: relative;
+  float: right;
+  margin-top: 12rem;
   z-index: 2;
-  margin-bottom: 15%;
 }
 
 /* =========== 
@@ -102,7 +102,7 @@
   margin-top: 20px;
   padding: 12px 25px 15px 25px;
   border-radius: 34px;
-  font-size: 20pt;
+  font-size: 1.5em;
   transition: all 0.5s;
 }
 
@@ -132,10 +132,95 @@
 
 
 .transitionAsset {
-  position: absolute;
+  position: relative;
   width: 100%;
   z-index: 2;
   overflow-y: visible;
   overflow-x: hidden;
-  bottom: 0;
+  margin-bottom: -5px;
+}
+
+
+/* =========== 
+   Media Queries 
+   ============
+*/
+
+@media only screen and (max-width: 900px) {
+/* =========== 
+   Layout 
+   ============
+*/
+
+  .left-contain {
+    position: relative;
+    width: 100%;
+    display: block;
+    margin-left: 8%;
+    padding-bottom: 10%;
+  }
+  
+  .right-contain {
+    width: 92%;
+    position: relative;
+    margin-top: 0;
+  }
+
+/* =========== 
+   Typography 
+   ============
+*/
+
+  .about .title h1 {
+    font-size: 10vw;
+    margin-left: 2%;
+    margin-bottom: 0;
+  }
+
+  .about p {
+    font-size: 3vw;
+    padding: 10px;
+  }
+
+  .about .backgroundText {
+    font-size: 35vw;  
+    bottom: -5vw;
+  }
+
+  .about button {
+    font-size: 4vw;
+  }
+
+  /* =========== 
+    Assets 
+    ============
+  */
+
+  .about .title svg {
+    width: 70%;
+    position: relative;
+  }
+
+  #github, .icons img {
+    height: 8vw;
+    min-height: 40px;
+    padding: 15px;
+    margin-right: 20px;
+  }
+
+  .right-contain svg {
+    height: 8vw;
+    padding-right: 5vw;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .about p {
+    font-size: 4.5vw;
+  }
+
+  .about .backgroundText {
+    display: none;
+  }
+
 }
