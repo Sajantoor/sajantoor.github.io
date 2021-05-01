@@ -195,9 +195,31 @@
 }
 
 
+@media only screen and (max-width: 900px) {
+    .caption {
+        display: block;
+        width: 100%;
+        margin-bottom: 0;
+    }
+
+    .more, .embed {
+        float: left;
+        display: block;
+        margin-left: 0;
+    }
+}
+
 @media only screen and (max-width: 600px) {
     .projects {
         padding: 25vh 5vw 0 5vw;
+    }
+
+    .projectTitle {
+        font-size: 10vw;
+    }
+
+    .projectSub {
+        font-size: 6vw;
     }
 
     .projectTitle, .projectSub {
@@ -208,11 +230,38 @@
     }
 
     .caption, .description {
-        font-size: 16px;
+        font-size: 5vw;
     }
 
     .titleMore, .subMore, .description {
-        padding-left: 2rem;
-        padding-right: 2rem;
+        padding-left: 4vw;
+        padding-right: 4vw;
+    }
+
+    .titleMore {
+        font-size: 10vw;
+    }
+
+    .subMore, .description, .more {
+        font-size: 5vw;
+    }
+    
+    .embed {
+        height: 8vw;
+    }
+
+    .projectIcons svg {
+        margin: 5vw;
+        height: 10vw;
+
+    }
+
+    .projectIcons svg:first-of-type {
+        margin-left: 2vw;
+    }
+
+    .link {
+        margin-left: 4vw;
+        font-size: 5vw;
     }
 }
