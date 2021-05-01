@@ -141,6 +141,88 @@
 }
 
 
+  /* =========== 
+    Circles 
+    ============
+  */
+
+  ul {
+    list-style-type: none;
+    position: relative;
+    width: 100vw;
+    top: 100px;
+    margin-bottom: -100px; /* don't take up space in document flow */
+    transform: translateZ(0);
+    z-index: 2;
+
+    animation: bounce 5s ease-in-out infinite;
+  }
+
+  .circles * {
+    position: absolute;
+    z-index: 5;
+    background-color: #4834d4;
+    border-radius: 100%;
+    float: left;
+    animation: move 15s linear infinite;
+    left: 55vw;
+    margin-right: -55vw;
+  }
+
+  .circles li:nth-child(1) {
+    width: 10px;
+    height: 10px;
+    top: 2vw;
+    animation-delay: 8s;
+  }
+
+  .circles li:nth-child(2) {
+    top: 5vw; 
+    animation-delay: 10s;
+  }
+
+  
+  .circles li:nth-child(3) {
+    top: 2vw; 
+    width: 10px;
+    height: 10px;
+  }
+
+  .circles li:nth-child(4) {
+    top: 3vw; 
+    width: 7px;
+    height: 7px;
+    animation-delay: 2s;
+  }
+
+  @keyframes move {
+    0% {
+      transform: translateX(0);
+    }
+
+    100% {
+      transform: translate(45vw, 1rem);
+    }
+  }
+
+
+  
+  @keyframes bounce {
+    0% {
+      transform: translateY(0);
+    }
+
+    50% {
+      transform: translateY(-1.5rem);
+    }
+
+    0% {
+      transform: translateY(0);
+    }
+  }
+
+
+
 /* =========== 
    Media Queries 
    ============
@@ -164,6 +246,10 @@
     width: 92%;
     position: relative;
     margin-top: 0;
+  }
+
+  ul {
+    display: none;
   }
 
 /* =========== 
@@ -225,3 +311,4 @@
   }
 
 }
+

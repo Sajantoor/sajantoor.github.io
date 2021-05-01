@@ -12,11 +12,6 @@ class ProjectContainer extends React.Component {
         super(props);
         this.myRef = React.createRef();
     }
-    // calculates denominator excluding 1 child element
-    componentDidMount() {
-        let el = this.myRef.current;
-        let childCount = el.children.length;
-    }
 
     render() {
         const CoronavirusComponents = [ {link: "https://reactjs.org/", component: <ReactIcon/>}, {link: "https://developers.google.com/maps/documentation", component: <GoogleMaps/>}, {link: "https://deck.gl/", component: <Uber/>},]

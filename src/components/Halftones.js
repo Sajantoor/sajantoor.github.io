@@ -3,8 +3,8 @@ import Halftones from '../assets/img/Halftones.png';
 
 const halftonesStyle = {
     backgroundImage: `url(${Halftones})`,
-    backgroundPosition: 'center',
-    backgroundSize: 'cover',
+    backgroundPosition: '0 0',
+    backgroundSize: '100% 100%',
     backgroundRepeat: 'repeat',
 }
 

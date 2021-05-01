@@ -31,9 +31,6 @@ class Projects extends React.Component {
             } else {
                 element.parentNode.removeAttribute('style');
             }
-            // get the element in view's index
-            let parent = element.parentNode;
-            let index = Array.prototype.indexOf.call(parent.children, element);
         }
     }
 

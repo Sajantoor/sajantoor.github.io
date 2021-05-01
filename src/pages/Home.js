@@ -15,6 +15,7 @@ class Home extends React.Component {
         <Landing/>
         <About/>
         <ProjectContainer/>
+        <Halftones/>
       </React.Fragment>
     )
   }

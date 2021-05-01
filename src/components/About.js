@@ -50,6 +50,13 @@ class About extends React.Component {
             <p> 27 Repositories </p>
           </div>
         </div>
+
+        <ul className="circles">
+          <li> </li>
+          <li> </li>
+          <li> </li>
+          <li> </li>
+        </ul>
         <TransitionAsset/>
       </div>
     )
