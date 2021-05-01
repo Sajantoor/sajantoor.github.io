@@ -15,8 +15,8 @@
 
 .title-contain {
   position: relative;
-  padding: 200px 0 200px 0;
-  width: 50%;
+  padding-top: 35vh;
+  width: 100%;
   margin: auto;
   text-align: center;
 }
@@ -32,8 +32,9 @@
 
 .title-contain h1, .title-contain h2 {
   font-family: 'Avenir LT Std';
-  position: absolute;
+  position: relative;
   text-align: center;
+  margin: 0;
   width: 100%;
   z-index: 2;
   word-break: keep-all;
@@ -48,17 +49,16 @@
                4px -2px 10px #ff1afc80, 
                -3px 3px 0px #15fcff, 
                -3px 3px 10px #15fcff80;
-  padding: 20px;
-  top: 1em;
+  padding: 20px 20px 0 20px;
 }
 
 .title-contain h2 {
-  font-size: 2.5em;
+  font-size: 3em;
   font-style: italic;
   font-weight: 65;
   color: #dcdde1;
   padding: 10px;
-  top: 9.2em;
+  margin-bottom: -320pt;
 }
 
 .highlight {
@@ -72,22 +72,26 @@
 */
 
 .landing img {
-  position: absolute;
-  bottom: 0;
-  z-index: 0;
+  position: relative;
   width: 105%;
   z-index: 5;
   filter: drop-shadow(0px 0px 30px rgba(15, 243, 255, 0.377));
+  margin-bottom: -5px;
 }
 
 #titleAsset {
-  position: relative;
-  bottom: 120px;
-  width: 700pt;
+  width: 740pt;
   z-index: 1;
 }
 
-#asset1 {
+.asset-contain {
+  width: 100vw; 
+  margin: auto; 
+  display: block;
+  margin-bottom: -20vh;
+}
+
+/* #asset1 {
   position: absolute;
   width: 80px;
   left: 12rem;
@@ -120,4 +124,47 @@
   width: 30px;
   left: 13rem;
   top: 35rem;
+} */
+
+@media only screen and (max-width: 900px) {
+  .title-contain h1 {
+    font-size: 15vw;
+  }
+
+  .title-contain h2 {
+    font-size: 4vw;
+    margin-bottom: -40vw;
+  }
+
+  #titleAsset {
+    width: 100vw;
+    z-index: 1;
+  }
+
+  .asset-contain {
+    margin-bottom: auto;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .title-contain h1 {
+    padding: 0;
+    text-shadow: 0.5vw -0.5vw 0vw #ff1afc, 
+                0.5vw -0.5vw 0.5vw #ff1afc80, 
+                -0.5vw 0.5vw 0vw #15fcff, 
+                -0.5vw 0.5vw 0.5vw #15fcff80;
+  }
+
+  .title-contain h2 {
+    font-size: 6vw;
+    margin-bottom: -45vw;
+  }
+
+  .title-contain {
+    padding-top: 25vh;
+  }
+
+  .landing {
+    min-height: auto;
+  }
 }

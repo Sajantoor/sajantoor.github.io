@@ -1,7 +1,7 @@
 import React from 'react';
 // eslint-disable-next-line
 import styles from '../styles/landing.css';
-import mountainImg from '../assets/img/mountains.png';
+import mountainImg from '../assets/img/mountains-cropped.png';
 import { ReactComponent as TitleAsset } from '../assets/shapes/TitleAsset.svg';
 import { ReactComponent as Asset1 } from '../assets/shapes/Asset_1.svg';
 import { ReactComponent as Asset2 } from '../assets/shapes/Asset_2.svg';
@@ -30,12 +30,14 @@ class Landing extends React.Component {
         <div className="title-contain">
           <h1> Sajan Toor </h1>
           <h2> I'm a <span className="highlight"> {this.state.currentWord}. </span> </h2>
-          <TitleAsset/>
-          <Asset1/>
+          <div className="asset-contain"> 
+            <TitleAsset/>
+          </div>
+          {/* <Asset1/>
           <TripleTriangle/>
           <DoubleTriangle/>
           <Asset2/>
-          <Circle/>
+          <Circle/> */}
         </div>
         <img src={mountainImg} alt=""/>
       </div>
@@ -47,6 +49,9 @@ class Landing extends React.Component {
     setInterval(this.typing, 100, this);
   }
 
+  /**
+   * Typing effect on landing page
+   */
   typing(_this) {
     const this_ = _this;
     let index = this_.state.index;

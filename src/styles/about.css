@@ -209,7 +209,8 @@
   }
 
   .right-contain svg {
-    height: 8vw;
+    height: 5vw;
+    min-height: 30px;
     padding-right: 5vw;
   }
 }
