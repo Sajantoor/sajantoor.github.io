@@ -15,7 +15,7 @@
 
 .title-contain {
   position: relative;
-  padding-top: 35vh;
+  padding-top: 25vh;
   width: 100%;
   margin: auto;
   text-align: center;
@@ -144,6 +144,10 @@
   .asset-contain {
     margin-bottom: auto;
   }
+
+  .landing {
+    min-height: auto;
+  }
 }
 
 @media only screen and (max-width: 500px) {
@@ -162,9 +166,5 @@
 
   .title-contain {
     padding-top: 25vh;
-  }
-
-  .landing {
-    min-height: auto;
   }
 }

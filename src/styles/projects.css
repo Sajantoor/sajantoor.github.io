@@ -195,6 +195,11 @@
 }
 
 
+/* =========== 
+   Media Queries 
+   ============
+*/
+
 @media only screen and (max-width: 900px) {
     .caption {
         display: block;
@@ -264,4 +269,14 @@
         margin-left: 4vw;
         font-size: 5vw;
     }
+}
+
+/* =========== 
+   Animations
+   ============
+*/
+
+
+.imgMore, .img {
+    transition: all 0.1s;
 }
