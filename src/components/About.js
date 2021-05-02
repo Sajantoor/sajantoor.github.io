@@ -5,15 +5,57 @@ import { ReactComponent as GitHub } from '../assets/logos/GitHub.svg';
 import LinkedIn from '../assets/logos/LinkedIn.png';
 import { ReactComponent as Code } from '../assets/icons/code.svg';
 import { ReactComponent as Email } from '../assets/icons/email.svg';
-import { ReactComponent as Place } from '../assets/icons/place.svg';
+import { ReactComponent as Git } from '../assets/icons/git.svg';
 import { ReactComponent as Settings } from '../assets/icons/settings.svg';
 import { ReactComponent as AboutTitleAsset } from '../assets/shapes/AboutTitleAsset.svg';
 import { ReactComponent as TransitionAsset } from '../assets/shapes/Transition Asset.svg';
 
-
-
 class About extends React.Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      repoCount: null,
+      count: 0,
+      reachedCount: false,
+    }
+  }
+
+  
+
+  componentDidMount() {
+    this.getRepoCount();
+    // this.getRepoCount().then(res => { 
+    //   this.count(this);
+    // });
+  }
+
+  // count(this_) {
+  //     console.log('run');
+  //     let total = this_.state.repoCount;
+  //     let count = this_.state.count;
+  //     console.log(total);
+  //     console.log(count > total);
+
+  //     if (count < total) {
+  //       console.log(true);
+  //       this_.setState({count: count + 1});
+  //       setTimeout(this.count, 20, this_);
+  //     } 
+  // }
+
+  /** Fetches from the GitHub API the number of repos and updated repos accordingly */
+  async getRepoCount() {
+    const data = await fetch("https://api.github.com/users/sajantoor/repos");
+    const json = await data.json();
+    this.setState({repoCount: json.length});
+    return json.length;
+  }
+
+
   render() {
+    const date = new Date();
+
     return(
       <div className="about">
         <div className="left-contain">
@@ -25,8 +67,8 @@ class About extends React.Component {
           <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eu molestie neque, vitae commodo eros. Maecenas ex ante, molestie sed dolor id, feugiat feugiat elit. Sed auctor felis a nulla suscipit laoreet vitae nec odio. </p>
 
           <div className="icons">
-            <a href="https://github.com/Sajantoor"> <GitHub/> </a>
-            <img src={LinkedIn} alt="LinkedIn Logo"/>
+            <a href="https://github.com/Sajantoor" target="_blank" rel="noreferrer"> <GitHub/> </a>
+            <a href="https://www.linkedin.com/in/sajan-toor-3091a11b2" target="_blank" rel="noreferrer"> <img src={LinkedIn} alt="LinkedIn Logo"/> </a>
           </div>
 
           <button> Download Resume </button>
@@ -39,15 +81,15 @@ class About extends React.Component {
           </div>
           <div>
             <Code/>
-            <p> 5 Years of Programming </p>
+            <p> {date.getFullYear() - 2015} Years of Programming </p>
           </div>
           <div>
             <Settings/>
             <p> 2 Years of VEX Robotics Competition </p>
           </div>
           <div>
-            <Place/>
-            <p> 27 Repositories </p>
+            <Git/>
+            <p> {this.state.repoCount} Repositories </p>
           </div>
         </div>
 
