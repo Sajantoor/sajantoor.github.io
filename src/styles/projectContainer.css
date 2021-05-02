@@ -8,6 +8,6 @@
     width: 100vw;
     min-height: 100vh;
     position: relative;
-    transition: background-color 0.2s;
+    transition: background-color 0.5s;
     z-index: 2;
 }

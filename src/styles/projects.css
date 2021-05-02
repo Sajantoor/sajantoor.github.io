@@ -173,10 +173,11 @@
 
 .imgMore {
     opacity: 0.4;
-    filter: blur(5px);
+    box-shadow: inset 0 0 30px 15px #212121;
+    filter: blur(10px);
 }
 
-.projectIcons svg {
+.projectIcons svg, .projectIcons img {
     float: left;
     min-height: 30px;
     height: 5vw;
@@ -184,7 +185,7 @@
     max-width: 100px;
     display: block;
     margin: 1rem;
-    transition: all 0.5s;
+    transition: filter 0.2s;
 }
 
 .projectIcons svg:first-of-type {
@@ -280,5 +281,5 @@
 
 
 .imgMore, .img {
-    transition: all 0.1s;
+    transition: all 0.3s;
 }
