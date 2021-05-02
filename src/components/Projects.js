@@ -37,7 +37,7 @@ class Projects extends React.Component {
     render() {
         return(
             <div className="projects" ref={this.myRef}>
-                <div className="projectContain">
+                <div className="projectContain" onClick={() => this.setState({more: !this.state.more})}>
                     <h1 className={!this.state.more ? "projectTitle" : "titleMore" }> { this.props.title } </h1>
                     <h2 className={!this.state.more ? "projectSub" : "subMore" }> { this.props.subtitle } </h2>
                     
