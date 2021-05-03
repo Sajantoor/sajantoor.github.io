@@ -2,8 +2,12 @@ body {
 	overflow-x: hidden;
 }
 
-h1, h2, h3, p, button, a {
-	font-family: 'Akrobat', Calibri;
+h1, h2, h3, button, a {
+	font-family: 'Akrobat Bold', Calibri;
+}
+
+p {
+	font-family: 'Akrobat Regular', Calibri;
 }
 
 button, input[type="submit"], input[type="reset"] {
