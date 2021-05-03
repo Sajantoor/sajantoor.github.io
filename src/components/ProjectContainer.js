@@ -67,7 +67,7 @@ class ProjectContainer extends React.Component {
                     subtitle="Solving the Puzzle"
                     img={rushHourImg}
                     caption="Solving the puzzle Rush Hour using graphs and the A* traversal algorithm."
-                    description="Solved the puzzle Rush Hour using graphs and the A* traversal algorithm. This was the final project for CMPT 225: Data Structures and Programming at SFU. The basic idea was to parse the basic idea was to parse the board, create easily modifiable board objects which could be used to create projections and new states and traverse said states using A* until a solved state was found. With the powerful A* heurstics and other optimizations we were able to solve the hardest puzzle in 0.125 seconds."
+                    description="Solved the puzzle Rush Hour using graphs and the A* traversal algorithm. This was the final project for CMPT 225: Data Structures and Programming at SFU. The basic idea was to parse the board, create easily modifiable board objects which could be used to create projections and new states and traverse said states using A* until a solved state was found. With powerful A* heurstics and other optimizations we were able to solve the hardest puzzle in 0.125 seconds."
                     linkText="View GitHub Repo"
                     link="https://github.com/Sajantoor/Rush-Hour-Solver"
                     embed={null}
@@ -80,7 +80,7 @@ class ProjectContainer extends React.Component {
                     subtitle="Overwatch Stats Bot"
                     img={discordImg}
                     caption="A Discord Bot with fun commands and Overwatch Stats!"
-                    description="This Discord Bot has many features from being able to get user and server information, to get Overwatch stats or fun things like posting random memes and beeping like a robot 🤖. I wanted a way to easily access Overwatch stats without launching the game or navigating the Overwatch website. The purpose of this project was to learn more about Node.js, TypeScript and the process behind creating a chat bot like a Discord bot. This was the first time I've used Node.js and TypeScript in a project and it was a fun learning experience!"
+                    description="This Discord Bot has many features from being able to get user and server information, Overwatch stats or fun things like posting random memes and beeping like a robot 🤖. I wanted a way to easily access Overwatch stats without launching the game or navigating the Overwatch website. The purpose of this project was to learn more about Node.js, TypeScript and the process behind creating a chat bot like a Discord bot. This was the first time I've used Node.js and TypeScript in a project and it was a fun learning experience!"
                     link="https://github.com/Sajantoor/Rush-Hour-Solver"
                     linkText="View GitHub Repo"
                     embed="https://discord.com/oauth2/authorize?client_id=738876776112980098&permissions=124992&scope=bot"
