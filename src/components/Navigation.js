@@ -39,14 +39,6 @@ class Navigation extends React.Component {
         // prevent rerendering over and over
         if (this.state.scrollPosition !== i) {      
           this.setState({scrollPosition: i})
-          // changes url based off position
-          if (i === 1) {
-            window.history.replaceState({}, '', 'home');
-          } else if (i === 2) {
-            window.history.replaceState({}, '', 'about');
-          } else if (i === 3) {
-            window.history.replaceState({}, '', 'projects');
-          }
         } 
 
         break;
@@ -62,13 +54,10 @@ class Navigation extends React.Component {
     // depending on element index
     if (pos === 2) {
       plusConstant = 30;
-      window.history.replaceState({}, '', 'about');
     } else if (pos === 3) {
       plusConstant = 150;
-      window.history.replaceState({}, '', 'projects');
     } else {
       plusConstant = 0;
-      window.history.replaceState({}, '', 'home');
     }
     // ssmoth scrolls based on scroll distance to element
     const scrollDistance = siblings[pos].getBoundingClientRect().top + window.scrollY + plusConstant;

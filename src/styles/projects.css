@@ -242,10 +242,6 @@
         top: 5rem;
     }
 
-    .caption, .description {
-        font-size: 5vw;
-    }
-
     .titleMore, .subMore, .description {
         padding-left: 4vw;
         padding-right: 4vw;
@@ -255,7 +251,11 @@
         font-size: 10vw;
     }
 
-    .subMore, .description, .more {
+    .caption, .description, .subMore {
+        font-size: 4vw;
+    }
+
+    .more {
         font-size: 5vw;
     }
     
@@ -265,7 +265,7 @@
 
     .projectIcons svg {
         margin: 5vw;
-        height: 10vw;
+        height: 5vw;
 
     }
 

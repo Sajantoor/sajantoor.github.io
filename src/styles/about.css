@@ -180,24 +180,24 @@
   .circles li:nth-child(1) {
     width: 10px;
     height: 10px;
-    top: 3vw;
+    top: 8vw;
     animation-delay: 8s;
   }
 
   .circles li:nth-child(2) {
-    top: 5vw; 
+    top: 9vw; 
     animation-delay: 10s;
   }
 
   
   .circles li:nth-child(3) {
-    top: 2vw; 
+    top: 10vw; 
     width: 10px;
     height: 10px;
   }
 
   .circles li:nth-child(4) {
-    top: 3vw; 
+    top: 7vw; 
     width: 7px;
     height: 7px;
     animation-delay: 2s;
