@@ -81,7 +81,7 @@ class ProjectContainer extends React.Component {
                     img={discordImg}
                     caption="A Discord Bot with fun commands and Overwatch Stats!"
                     description="This Discord Bot has many features from being able to get user and server information, Overwatch stats or fun things like posting random memes and beeping like a robot 🤖. I wanted a way to easily access Overwatch stats without launching the game or navigating the Overwatch website. The purpose of this project was to learn more about Node.js, TypeScript and the process behind creating a chat bot like a Discord bot. This was the first time I've used Node.js and TypeScript in a project and it was a fun learning experience!"
-                    link="https://github.com/Sajantoor/Rush-Hour-Solver"
+                    link="https://github.com/Sajantoor/Discord-Overwatch-Stats-Bot"
                     linkText="View GitHub Repo"
                     embed="https://discord.com/oauth2/authorize?client_id=738876776112980098&permissions=124992&scope=bot"
                     icons={DiscordBot}
