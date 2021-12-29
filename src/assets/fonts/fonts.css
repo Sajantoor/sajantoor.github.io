@@ -1,48 +1,58 @@
 @font-face {
-  font-family: 'Akrobat Regular';
+  font-family: "Avenir LT Std";
   font-style: normal;
   font-weight: normal;
-  src: local('Akrobat Regular'), url('Akrobat-Regular.woff') format('woff');
+  src: local("Avenir LT Std"),
+    url("AvenirLTStd-MediumOblique.otf") format("opentype");
 }
 
 @font-face {
-  font-family: 'Akrobat Light';
+  font-family: "Akrobat Regular";
   font-style: normal;
   font-weight: normal;
-  src: local('Akrobat Light'), url('Akrobat-Light.woff') format('woff');
+  src: local("Akrobat Regular"), url("Akrobat-Regular.woff") format("woff");
 }
 
 @font-face {
-  font-family: 'Akrobat ExtraLight';
+  font-family: "Akrobat Light";
   font-style: normal;
   font-weight: normal;
-  src: local('Akrobat ExtraLight'), url('Akrobat-ExtraLight.woff') format('woff');
+  src: local("Akrobat Light"), url("Akrobat-Light.woff") format("woff");
 }
 
 @font-face {
-  font-family: 'Akrobat SemiBold';
+  font-family: "Akrobat ExtraLight";
   font-style: normal;
   font-weight: normal;
-  src: local('Akrobat SemiBold'), url('Akrobat-SemiBold.woff') format('woff');
+  src: local("Akrobat ExtraLight"),
+    url("Akrobat-ExtraLight.woff") format("woff");
 }
 
 @font-face {
-  font-family: 'Akrobat Bold';
+  font-family: "Akrobat SemiBold";
   font-style: normal;
   font-weight: normal;
-  src: local('Akrobat Bold'), url('Akrobat-Bold.woff') format('woff');
+  src: local("Akrobat SemiBold"), url("Akrobat-SemiBold.woff") format("woff");
 }
 
 @font-face {
-  font-family: 'Akrobat ExtraBold Regular';
+  font-family: "Akrobat Bold";
   font-style: normal;
   font-weight: normal;
-  src: local('Akrobat ExtraBold Regular'), url('akrobat-extrabold-webfont.woff') format('woff');
+  src: local("Akrobat Bold"), url("Akrobat-Bold.woff") format("woff");
 }
 
 @font-face {
-  font-family: 'Akrobat Black';
+  font-family: "Akrobat ExtraBold Regular";
   font-style: normal;
   font-weight: normal;
-  src: local('Akrobat Black'), url('Akrobat-Black.woff') format('woff');
+  src: local("Akrobat ExtraBold Regular"),
+    url("akrobat-extrabold-webfont.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Akrobat Black";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Akrobat Black"), url("Akrobat-Black.woff") format("woff");
 }
