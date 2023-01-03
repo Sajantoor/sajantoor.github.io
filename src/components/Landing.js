@@ -10,7 +10,7 @@ class Landing extends React.Component {
     super(props);
 
     this.state = {
-      subtitle: ["Programmer", "Designer", "Student"],
+      subtitle: ["Programmer", "Student"],
       index: 0,
       currentWord: null,
       wordIndex: 0,
@@ -68,7 +68,7 @@ class Landing extends React.Component {
     }
 
     if ((wordIndex === 0) && finishedWord) {
-      if (index === 2) {
+      if (index === 1) {
         index = 0;
       } else {
         index++;

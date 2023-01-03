@@ -21,28 +21,12 @@ class About extends React.Component {
     }
   }
 
-  
+
 
   componentDidMount() {
     this.getRepoCount();
-    // this.getRepoCount().then(res => { 
-    //   this.count(this);
-    // });
   }
 
-  // count(this_) {
-  //     console.log('run');
-  //     let total = this_.state.repoCount;
-  //     let count = this_.state.count;
-  //     console.log(total);
-  //     console.log(count > total);
-
-  //     if (count < total) {
-  //       console.log(true);
-  //       this_.setState({count: count + 1});
-  //       setTimeout(this.count, 20, this_);
-  //     } 
-  // }
 
   /** Fetches from the GitHub API the number of repos and updated repos accordingly */
   async getRepoCount() {
@@ -64,7 +48,7 @@ class About extends React.Component {
             <AboutTitleAsset/>
           </div>
           <h1 className="backgroundText"> About </h1>
-          <p> Hi, I'm a second year Computer Science student at SFU. I'm passionate about programming, artificial inteligence and cybersecurity. I'm proficient in programming languages such as C, C++, Python, Java, JavaScript and TypeScript. </p>
+          <p> Hi, I'm a 3rd year Computer Science student at SFU. I'm passionate about programming, artificial inteligence and cybersecurity. </p>
 
           <div className="icons">
             <a href="https://github.com/Sajantoor" target="_blank" rel="noreferrer"> <GitHub/> </a>
@@ -72,25 +56,6 @@ class About extends React.Component {
           </div>
 
           <button> Download Resume </button>
-        </div>
-
-        <div className="right-contain">
-          <div>
-            <Email/>
-            <p> sajantoor98@gmail.com </p>
-          </div>
-          <div>
-            <Code/>
-            <p> {date.getFullYear() - 2015} Years of Programming </p>
-          </div>
-          <div>
-            <Settings/>
-            <p> 2 Years of VEX Robotics Competition </p>
-          </div>
-          <div>
-            <Git/>
-            <p> {this.state.repoCount} Repositories </p>
-          </div>
         </div>
 
         <ul className="circles">
