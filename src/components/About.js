@@ -48,7 +48,7 @@ class About extends React.Component {
             <AboutTitleAsset/>
           </div>
           <h1 className="backgroundText"> About </h1>
-          <p> Hi, I'm a 3rd year Computer Science student at SFU. I'm passionate about programming, artificial inteligence and cybersecurity. </p>
+          <p> Hi, I'm a 3rd year Computer Science and math minor student at SFU. I'm passionate about programming, artificial inteligence, cybersecurity and mathematics. </p>
 
           <div className="icons">
             <a href="https://github.com/Sajantoor" target="_blank" rel="noreferrer"> <GitHub/> </a>
