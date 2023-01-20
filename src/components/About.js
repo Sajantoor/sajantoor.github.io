@@ -3,43 +3,11 @@ import React from 'react';
 import styles from '../styles/about.css';
 import { ReactComponent as GitHub } from '../assets/logos/GitHub.svg';
 import LinkedIn from '../assets/logos/LinkedIn.png';
-import { ReactComponent as Code } from '../assets/icons/code.svg';
-import { ReactComponent as Email } from '../assets/icons/email.svg';
-import { ReactComponent as Git } from '../assets/icons/git.svg';
-import { ReactComponent as Settings } from '../assets/icons/settings.svg';
 import { ReactComponent as AboutTitleAsset } from '../assets/shapes/AboutTitleAsset.svg';
 import { ReactComponent as TransitionAsset } from '../assets/shapes/Transition Asset.svg';
 
 class About extends React.Component {
-  constructor(props) {
-    super(props);
-
-    this.state = {
-      repoCount: null,
-      count: 0,
-      reachedCount: false,
-    }
-  }
-
-
-
-  componentDidMount() {
-    this.getRepoCount();
-  }
-
-
-  /** Fetches from the GitHub API the number of repos and updated repos accordingly */
-  async getRepoCount() {
-    const data = await fetch("https://api.github.com/users/sajantoor/repos");
-    const json = await data.json();
-    this.setState({repoCount: json.length});
-    return json.length;
-  }
-
-
   render() {
-    const date = new Date();
-
     return(
       <div className="about">
         <div className="left-contain">
