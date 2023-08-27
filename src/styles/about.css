@@ -154,17 +154,16 @@
     ============
   */
 
-  ul {
+   /* ul {
     list-style-type: none;
     position: relative;
     width: 100vw;
     top: 100px;
-    margin-bottom: -100px; /* don't take up space in document flow */
+    margin-bottom: -100px;  don't take up space in document flow 
     transform: translateZ(0);
     z-index: 2;
-
     animation: bounce 5s ease-in-out infinite;
-  }
+  } */
 
   .circles * {
     position: absolute;

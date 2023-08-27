@@ -6,7 +6,7 @@ import { ReactComponent as Link } from '../assets/icons/link.svg';
 
 class Projects extends React.Component {
     constructor(props) {
-        super(props); 
+        super(props);
         this.scroll = this.scroll.bind(this);
         this.myRef = React.createRef();
         this.state = {
@@ -20,7 +20,7 @@ class Projects extends React.Component {
 
     scroll() {
         let element = this.myRef.current;
-        let boundingClient = element.getBoundingClientRect(); 
+        let boundingClient = element.getBoundingClientRect();
         let elementTopPos = boundingClient.top;
         let elementBottomPos = boundingClient.bottom;
         // 0 is when in view 300 is a little earlier so it's complete due to the time of the animation
@@ -35,43 +35,45 @@ class Projects extends React.Component {
     }
 
     render() {
-        return(
+        return (
             <div className="projects" ref={this.myRef}>
-                <div className="projectContain" onClick={() => this.setState({more: !this.state.more})}>
-                    <h1 className={!this.state.more ? "projectTitle" : "titleMore" }> { this.props.title } </h1>
-                    <h2 className={!this.state.more ? "projectSub" : "subMore" }> { this.props.subtitle } </h2>
-                    
-                    {this.state.more && 
+                <div className="projectContain" onClick={() => this.setState({ more: !this.state.more })}>
+                    <h1 className={!this.state.more ? "projectTitle" : "titleMore"}> {this.props.title} </h1>
+                    <h2 className={!this.state.more ? "projectSub" : "subMore"}> {this.props.subtitle} </h2>
+
+                    {this.state.more &&
                         <React.Fragment>
-                            <p className="description"> {this.props.description} </p>
-                
-                                { this.props.icons && 
-                                    <div className="projectIcons"> 
-                                     { this.props.icons.map((Component, key) => (<a target="_blank" rel="noopener noreferrer" href={Component.link} key={key}> {Component.component} </a> )) }
-                                     </div> 
-                                } 
-                      
+                            <div className="description">
+                                {this.props.children}
+                            </div>
+
+                            {this.props.icons &&
+                                <div className="projectIcons">
+                                    {this.props.icons.map((Component, key) => (<a target="_blank" rel="noopener noreferrer" href={Component.link} key={key}> {Component.component} </a>))}
+                                </div>
+                            }
+
                             <a target="_blank" rel="noopener noreferrer" href={this.props.link}> <button className="link"> {this.props.linkText} </button> </a>
-                   
+
                         </React.Fragment>
                     }
 
-                    <div className="imgContain"> 
-                        <img className={!this.state.more ? "img" : "imgMore"} src={this.props.img} alt=""/>
+                    <div className="imgContain">
+                        <img className={!this.state.more ? "img" : "imgMore"} src={this.props.img} alt="" />
                     </div>
                 </div>
 
                 <div className="projectCaption">
-                    {!this.state.more && 
-                        <p className="caption"> {this.props.caption} </p> 
+                    {!this.state.more &&
+                        <p className="caption"> {this.props.caption} </p>
                     }
-                    
-                    <button className="more" onClick={() => this.setState({more: !this.state.more})}> {!this.state.more ? "MORE" : "X"} </button>
 
-                    {this.props.embed && 
-                        <a target="_blank" rel="noopener noreferrer" href={this.props.embed}> <Link/> </a>
-                    } 
-                    
+                    <button className="more" onClick={() => this.setState({ more: !this.state.more })}> {!this.state.more ? "MORE" : "X"} </button>
+
+                    {this.props.embed &&
+                        <a target="_blank" rel="noopener noreferrer" href={this.props.embed}> <Link /> </a>
+                    }
+
                 </div>
             </div>
         )
