@@ -67,7 +67,7 @@ class Navigation extends React.Component {
   render() {
     return(
       <div className="navigation" ref={this.myRef}>
-        <button className={(this.state.scrollPosition === 3) ? "navButton focus" : "navButton"} onClick={() => this.goTo(3)}> Projects </button>
+        <button className={(this.state.scrollPosition === 3) ? "navButton focus" : "navButton"} onClick={() => this.goTo(3)}> Experience </button>
         <button className={(this.state.scrollPosition === 2) ? "navButton focus" : "navButton"} onClick={() => this.goTo(2)}> About </button>
         <button className={(this.state.scrollPosition === 1) ? "navButton focus" : "navButton"} onClick={() => this.goTo(1)}>  Home </button>
       </div>

@@ -53,7 +53,10 @@ class Projects extends React.Component {
                                 </div>
                             }
 
-                            <a target="_blank" rel="noopener noreferrer" href={this.props.link}> <button className="link"> {this.props.linkText} </button> </a>
+                            {
+                                this.props.link &&
+                                <a target="_blank" rel="noopener noreferrer" href={this.props.link}> <button className="link"> {this.props.linkText} </button> </a>
+                            }
 
                         </React.Fragment>
                     }
