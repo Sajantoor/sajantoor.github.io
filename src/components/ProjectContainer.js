@@ -25,6 +25,9 @@ import { ReactComponent as SpringBoot } from '../assets/logos/SpringBoot.svg';
 import { ReactComponent as Rust } from '../assets/logos/Rust.svg';
 import { ReactComponent as GoogleCloud } from '../assets/logos/GoogleCloud.svg';
 
+import stockerImage from '../assets/img/Stocker.png';
+import mazeOfDeadImage from '../assets/img/MazeOfTheDead.png';
+import denyAndConquer from '../assets/img/denyAndConquer.png';
 
 class ProjectContainer extends React.Component {
     constructor(props) {
@@ -69,6 +72,10 @@ class ProjectContainer extends React.Component {
             { link: "https://junit.org/junit5/", component: <img alt="JUnit logo" src="https://junit.org/junit5/assets/img/junit5-logo.png" /> }
         ]
 
+        const denyAndConquerIcons = [
+            { link: "https://www.java.com/en/", component: <Java /> },
+        ]
+
         return (
             <div className="projectContainer" ref={this.myRef}>
                 <Projects
@@ -90,6 +97,41 @@ class ProjectContainer extends React.Component {
                 </Projects>
 
                 <Projects
+                    title="UDP/IP Implementation"
+                    img="https://prioritynetworks.ca/wp-content/uploads/2022/08/THE-Importance-of-computer-networking-2-scaled.jpg"
+                    caption="A low level implementation of the UDP and IPv4 protocols in Rust"
+                    linkText="View GitHub Repo"
+                    link="https://github.com/Sajantoor/udp-implementation"
+                    icons={blockchainIcons}
+                    backgroundColor={"#332f35"}
+                >
+                    <ul>
+                        <li>Engineered a robust low-level UDP/IP implementation with full support for IPv4 and UDP protocols</li>
+                        <li>Orchestrated vital protocol functionalities such as checksum calculation and verification, packet fragmentation and reassembly, handling Time To Live (TTL), etc.</li>
+                        <li>Utilized a TUN interface facilitating direct interaction with raw network layer packets from the kernel</li>
+                        <li>Tested using Wireshark ensuring accurate transmission and reception of packets</li>
+                    </ul>
+                </Projects>
+
+                <Projects
+                    title="Deny and Conquer"
+                    img={denyAndConquer}
+                    caption="Multiplayer game in Java using TCP sockets"
+                    linkText="View GitHub Repo"
+                    link="https://github.com/Sajantoor/Deny-And-Conquer-Game"
+                    icons={denyAndConquerIcons}
+                    backgroundColor={"#1e1e1e"}
+                >
+                    <ul>
+                        <li>Developed a multiplayer game in Java Swing, where players compete to capture boxes on a grid</li>
+                        <li>Designed a client-server architecture enabling concurrent gameplay, utilizing TCP sockets for communication</li>
+                        <li>Established a robust messaging scheme for actions such as drawing, capturing, and releasing boxes allowing for communication between clients and the server</li>
+                        <li>Used synchronized methods to manage player interactions, ensuring data integrity and preventing race conditions</li>
+                        <li>Constructed server-side components to manage game state and player interactions, ensuring consistency for all players</li>
+                    </ul>
+                </Projects>
+
+                <Projects
                     title="Blockchain"
                     subtitle="Proof of Work Blockchain"
                     img="https://www.chainalysis.com/wp-content/uploads/2022/02/bloggraphic-blockchains-01-1.png"
@@ -97,7 +139,7 @@ class ProjectContainer extends React.Component {
                     linkText="View GitHub Repo"
                     link="https://github.com/Sajantoor/proof-of-work-blockchain"
                     icons={blockchainIcons}
-                    backgroundColor={"#4834d4"}
+                    backgroundColor={"#122149"}
                 >
                     <ul>
                         <li>Developed a proof of work blockchain in Rust using SHA256 hashing and a work queue to mine blocks</li>
@@ -113,7 +155,7 @@ class ProjectContainer extends React.Component {
                     linkText="View GitHub Repo"
                     link="https://github.com/Sajantoor/LeetCode-API"
                     icons={leetCodeIcons}
-                    backgroundColor={"#4834d4"}
+                    backgroundColor={"#2a2a2a"}
                 >
                     <ul>
                         <li>Developed an API orchestrator, providing REST APIs for common LeetCode operations such as retrieving problems and submitting solutions using Java and Spring Boot</li>
@@ -126,12 +168,12 @@ class ProjectContainer extends React.Component {
                 <Projects
                     title="Stocker"
                     subtitle="A stocking app?"
-                    img="https://raw.githubusercontent.com/Sajantoor/Stocker/main/frontend/public/assets/stocker.png"
+                    img={stockerImage}
                     caption="A social media app for stock traders!"
                     linkText="View GitHub Repo"
                     link="https://github.com/Sajantoor/Stocker"
                     icons={stockerIcons}
-                    backgroundColor={"#4834d4"}
+                    backgroundColor={"#27ae60"}
                 >
                     <ul>
                         <li>Developed a social media mobile app revolving around stock trading at SFU’s Mountain Madness Hackathon</li>
@@ -144,13 +186,12 @@ class ProjectContainer extends React.Component {
 
                 <Projects
                     title="Maze of the Dead"
-                    subtitle="A stocking app?"
-                    img={null}
-                    caption="A social media app for stock traders!"
+                    img={mazeOfDeadImage}
+                    caption="A 2D zombie inspired maze game"
                     linkText="View GitHub Repo"
-                    link="https://github.com/Sajantoor/Stocker"
+                    link="https://github.com/Sajantoor/Maze-Of-The-Dead"
                     icons={mazeOfDeadIcons}
-                    backgroundColor={"#4834d4"}
+                    backgroundColor={"#9d0000"}
                 >
                     <ul>
                         <li>Created a 2D zombie inspired maze game where the player must navigate through a maze</li>
@@ -169,7 +210,7 @@ class ProjectContainer extends React.Component {
                     link="https://github.com/Sajantoor/Coronavirus-Tracker"
                     embed="https://sajantoor.github.io/Coronavirus-Tracker/"
                     icons={CoronavirusComponents}
-                    backgroundColor={"#4834d4"}
+                    backgroundColor={"#151f2c"}
                 >
                     <ul>
                         <li>Provided up-to-date and accessible information about COVID-19 cases and deaths per region</li>
@@ -186,7 +227,7 @@ class ProjectContainer extends React.Component {
                     linkText="View GitHub Repo"
                     embed="https://www.instagram.com/4549alpha/"
                     icons={Robotics}
-                    backgroundColor={"#20222e"}
+                    backgroundColor={"#24242e"}
                 >
                     <ul>
                         <li>Programmed custom robots to compete in an international and interschool robotics competition, ultimately qualified for the 2019-2020 season world championships, <strong>ranking 3rd in Canada out of 7200 teams</strong></li>
@@ -206,7 +247,7 @@ class ProjectContainer extends React.Component {
                     link="https://github.com/Sajantoor/Rush-Hour-Solver"
                     embed={null}
                     icons={RushHourComponents}
-                    backgroundColor={"#7289DA"}
+                    backgroundColor={"#292d2f"}
                 >
                     <ul>
                         <li>Built a solver for the puzzle called Rush Hour, using several objects, data structures, and algorithms</li>
@@ -224,7 +265,7 @@ class ProjectContainer extends React.Component {
                     linkText="View GitHub Repo"
                     embed="https://discord.com/oauth2/authorize?client_id=738876776112980098&permissions=124992&scope=bot"
                     icons={DiscordBot}
-                    backgroundColor={"#23272A"}
+                    backgroundColor={"#2f3136"}
                 />
             </div>
         )
