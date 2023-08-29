@@ -10,7 +10,7 @@ class Landing extends React.Component {
     super(props);
 
     this.state = {
-      subtitle: ["Programmer", "Student"],
+      subtitle: ["Software Developer", "Student"],
       index: 0,
       currentWord: null,
       wordIndex: 0,
@@ -25,11 +25,11 @@ class Landing extends React.Component {
         <div className="title-contain">
           <h1> Sajan Toor </h1>
           <h2> I'm a <span className="highlight"> {this.state.currentWord}. </span> </h2>
-          <div className="asset-contain"> 
-            <TitleAsset/>
+          <div className="asset-contain">
+            <TitleAsset />
           </div>
         </div>
-        <img src={mountainImg} alt=""/>
+        <img src={mountainImg} alt="" />
       </div>
     )
   }
@@ -79,7 +79,7 @@ class Landing extends React.Component {
 
     currentWorld = word.substring(0, wordIndex);
 
-    this_.setState({currentWord: currentWorld, wordIndex: wordIndex, finishedWord: finishedWord, index: index, timeout: timeout});
+    this_.setState({ currentWord: currentWorld, wordIndex: wordIndex, finishedWord: finishedWord, index: index, timeout: timeout });
   }
 }
 
