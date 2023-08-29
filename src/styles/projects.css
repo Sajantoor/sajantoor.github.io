@@ -190,7 +190,9 @@
     transition: filter 0.2s;
 }
 
-.projectIcons svg:first-of-type {
+/* Make first icon have margin left of 3rem */
+
+.projectIcons :first-child {
     margin-left: 3rem;
 }
 
