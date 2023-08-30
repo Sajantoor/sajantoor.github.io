@@ -26,7 +26,7 @@ class About extends React.Component {
             <a href="https://www.linkedin.com/in/sajan-toor-3091a11b2" target="_blank" rel="noreferrer"> <img src={LinkedIn} alt="LinkedIn Logo" /> </a>
           </div>
 
-          <a href={Resume} download="Resume - Sajan Toor.pdf">
+          <a href={Resume} download="Resume - Sajan Toor">
             <button> Download Resume </button>
           </a>
         </div>
