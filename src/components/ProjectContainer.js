@@ -266,7 +266,13 @@ class ProjectContainer extends React.Component {
                     embed="https://discord.com/oauth2/authorize?client_id=738876776112980098&permissions=124992&scope=bot"
                     icons={DiscordBot}
                     backgroundColor={"#2f3136"}
-                />
+                >
+                    <ul>
+                        <li>Developed a Discord bot using TypeScript, Node.js, and Discord.js, allowing users to view their Overwatch stats</li>
+                        <li>Used Discord.js to interact with the Discord API, allowing the bot to send and receive messages, obtain user information, and more</li>
+                        <li>Utilized the Overwatch API to retrieve user stats, allowing users to view their stats for any hero</li>
+                    </ul>
+                </Projects>
             </div>
         )
     }
