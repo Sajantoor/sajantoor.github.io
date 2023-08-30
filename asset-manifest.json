@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.b5504dfe.css",
-    "main.js": "/static/js/main.c103bfb8.js",
+    "main.css": "/static/css/main.4a422046.css",
+    "main.js": "/static/js/main.8fc69e40.js",
     "static/js/787.5013b8fd.chunk.js": "/static/js/787.5013b8fd.chunk.js",
     "static/media/discordImg.png": "/static/media/discordImg.c28a83ebfa9b66d730d7.png",
     "static/media/Halftones.png": "/static/media/Halftones.ba123443fbc8770f139d.png",
@@ -20,12 +20,12 @@
     "static/media/AvenirLTStd-MediumOblique.otf": "/static/media/AvenirLTStd-MediumOblique.0e66954ad4ccbeb017da.otf",
     "static/media/akrobat-extrabold-webfont.woff": "/static/media/akrobat-extrabold-webfont.824bfebc5044fdd8cf92.woff",
     "static/media/VEX.png": "/static/media/VEX.38b65dc306ceedf52843.png",
-    "static/media/Java.svg": "/static/media/Java.b4a0adbd9cd896d2c424c0d7b59f7962.svg",
-    "static/media/Uber.svg": "/static/media/Uber.a9c73ab0feb2083ea37e8bc60d858659.svg",
-    "static/media/React.svg": "/static/media/React.cb5ddb58f0e16147d0a5f3b6edf93fb0.svg",
+    "static/media/Java.svg": "/static/media/Java.e9c7bee6365e79706d14b0779000e395.svg",
+    "static/media/Uber.svg": "/static/media/Uber.ad6514143e5a2e515263feabca777ea7.svg",
+    "static/media/React.svg": "/static/media/React.80954caa95f5ecbe8f69c01381174aa2.svg",
     "static/media/Node.svg": "/static/media/Node.b7a226140319d4e29f577f5bec019787.svg",
-    "static/media/GitHub.svg": "/static/media/GitHub.d2d4f44dd7c9e01a754417a12dff60c8.svg",
-    "static/media/C++.svg": "/static/media/C++.f899cbc39f3b443a4a639c72c27ecb22.svg",
+    "static/media/GitHub.svg": "/static/media/GitHub.3ddd7388b620eae200904ad5239873e8.svg",
+    "static/media/C++.svg": "/static/media/C++.bc5df5b90d9847377f8bb087afb39ccf.svg",
     "static/media/TypeScript.svg": "/static/media/TypeScript.186e08614f7d269ede6d410cefd4c352.svg",
     "static/media/Discord.svg": "/static/media/Discord.d2c3bfa75ff259af5d7fc2e4fa123569.svg",
     "static/media/GoogleMaps.svg": "/static/media/GoogleMaps.24b2bcb94349710b7f203c999d593810.svg",
@@ -33,12 +33,12 @@
     "static/media/link.svg": "/static/media/link.cf8590141b0000fba3c7067aa780f534.svg",
     "static/media/Transition Asset.svg": "/static/media/Transition Asset.f0fe93c667a094cca4d05f6a8d1dff8a.svg",
     "static/media/AboutTitleAsset.svg": "/static/media/AboutTitleAsset.270b8cc8b09a2ce5f043d69c7e163e98.svg",
-    "main.b5504dfe.css.map": "/static/css/main.b5504dfe.css.map",
-    "main.c103bfb8.js.map": "/static/js/main.c103bfb8.js.map",
+    "main.4a422046.css.map": "/static/css/main.4a422046.css.map",
+    "main.8fc69e40.js.map": "/static/js/main.8fc69e40.js.map",
     "787.5013b8fd.chunk.js.map": "/static/js/787.5013b8fd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b5504dfe.css",
-    "static/js/main.c103bfb8.js"
+    "static/css/main.4a422046.css",
+    "static/js/main.8fc69e40.js"
   ]
 }
