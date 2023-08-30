@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.c62b54d5.css",
-    "main.js": "/static/js/main.12c7e3df.js",
+    "main.js": "/static/js/main.5324e229.js",
     "static/js/787.5013b8fd.chunk.js": "/static/js/787.5013b8fd.chunk.js",
     "static/media/denyAndConquer.png": "/static/media/denyAndConquer.576653a14ed6cf545e43.png",
     "static/media/discordImg.png": "/static/media/discordImg.c28a83ebfa9b66d730d7.png",
@@ -40,11 +40,11 @@
     "static/media/Transition Asset.svg": "/static/media/Transition Asset.f0fe93c667a094cca4d05f6a8d1dff8a.svg",
     "static/media/AboutTitleAsset.svg": "/static/media/AboutTitleAsset.270b8cc8b09a2ce5f043d69c7e163e98.svg",
     "main.c62b54d5.css.map": "/static/css/main.c62b54d5.css.map",
-    "main.12c7e3df.js.map": "/static/js/main.12c7e3df.js.map",
+    "main.5324e229.js.map": "/static/js/main.5324e229.js.map",
     "787.5013b8fd.chunk.js.map": "/static/js/787.5013b8fd.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c62b54d5.css",
-    "static/js/main.12c7e3df.js"
+    "static/js/main.5324e229.js"
   ]
 }
