@@ -179,6 +179,10 @@
     filter: blur(10px);
 }
 
+.projectIcons {
+    padding-bottom: 0.5rem;
+}
+
 .projectIcons svg, .projectIcons img {
     float: left;
     min-height: 30px;
@@ -250,6 +254,10 @@
         padding-right: 4vw;
     }
 
+    .description {
+        display: block;
+    }
+
     .titleMore {
         font-size: 10vw;
     }
@@ -266,15 +274,15 @@
         height: 8vw;
     }
 
-    .projectIcons svg {
-        margin: 5vw;
+    .projectIcons svg, .projectIcons img {
+        margin: 1vw;
         height: 5vw;
-
     }
 
-    .projectIcons svg:first-of-type {
+    .projectIcons:first-child {
         margin-left: 2vw;
     }
+
 
     .link {
         margin-left: 4vw;
