@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.c62b54d5.css",
-    "main.js": "/static/js/main.9c1dbb31.js",
+    "main.js": "/static/js/main.348a4e8e.js",
     "static/js/787.5013b8fd.chunk.js": "/static/js/787.5013b8fd.chunk.js",
     "static/media/denyAndConquer.png": "/static/media/denyAndConquer.576653a14ed6cf545e43.png",
     "static/media/discordImg.png": "/static/media/discordImg.c28a83ebfa9b66d730d7.png",
@@ -11,7 +11,7 @@
     "static/media/TitleAsset.svg": "/static/media/TitleAsset.7e1d8c51732f03537a9b714b9ae328f9.svg",
     "static/media/MazeOfTheDead.png": "/static/media/MazeOfTheDead.16d678b9f0542d197d97.png",
     "static/media/Robotics.jpg": "/static/media/Robotics.841a52c66f1fc1888d93.jpg",
-    "static/media/Resume - Sajan Toor.pdf": "/static/media/Resume - Sajan Toor.9948e61f75ab6558f545.pdf",
+    "static/media/Resume - Sajan Toor.pdf": "/static/media/Resume - Sajan Toor.b93d612ea165cda3736e.pdf",
     "static/media/Stocker.png": "/static/media/Stocker.ef47b7b95592a1faa39b.png",
     "static/media/Akrobat-Bold.woff": "/static/media/Akrobat-Bold.9b8369b5742940da28a8.woff",
     "static/media/Akrobat-SemiBold.woff": "/static/media/Akrobat-SemiBold.75ac24b089b02e3ab174.woff",
@@ -41,11 +41,11 @@
     "static/media/Transition Asset.svg": "/static/media/Transition Asset.f0fe93c667a094cca4d05f6a8d1dff8a.svg",
     "static/media/AboutTitleAsset.svg": "/static/media/AboutTitleAsset.270b8cc8b09a2ce5f043d69c7e163e98.svg",
     "main.c62b54d5.css.map": "/static/css/main.c62b54d5.css.map",
-    "main.9c1dbb31.js.map": "/static/js/main.9c1dbb31.js.map",
+    "main.348a4e8e.js.map": "/static/js/main.348a4e8e.js.map",
     "787.5013b8fd.chunk.js.map": "/static/js/787.5013b8fd.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c62b54d5.css",
-    "static/js/main.9c1dbb31.js"
+    "static/js/main.348a4e8e.js"
   ]
 }
