@@ -87,12 +87,13 @@ class ProjectContainer extends React.Component {
                     icons={SapIcons}
                 >
                     <ul>
-                        <li>Developed highly scalable and fault-tolerant microservices using Java, Spring Boot, JAX-RS, Apache, and Hystrix</li>
-                        <li>Designed and developed a proof of concept for a new microservice to synthetic monitor the health of critical workflows for SAP Analytics Cloud, improving stability and reducing customer impact</li>
-                        <li>Created alerting systems to notify on-call developers of issues before customers report them, ensuring low customer impact, using a variety of metrics such as response time and error rate</li>
-                        <li>Improved the API response time of microservices by up to 60% by optimizing code, reducing the number of database calls, and caching data</li>
-                        <li>Developed end-to-end UI based testing software to test key workflows in canary and production environments using Selenium, Python, and Jenkins, which allowed developers to identify and fix issues</li>
-                        <li>Tested software functionality, performance, and scalability to ensure reliability using JUnit, Mockito, and JMeter</li>
+                        <li>Developed fault-tolerant microservices, required to handle millions of requests, using Java, Spring Boot, JAX-RS, Apache, and Hystrix</li>
+                        <li>Implemented authorization APIs for SAP Cloud Platform, tested functionality and scalability with JUnit, Mockito, and JMeter</li>
+                        <li>Improved API response time by 60% by caching responses of slow upstream calls, reduced database calls by 20% and improved performance in downstream services</li>
+                        <li>Designed a Kubernetes based synthetic monitoring microservice for performing health checks on critical workflows, aimed at improving stability and reliability</li>
+                        <li>Resolved 15+ bugs in microservices by communicating with stakeholders, finding root causes, and developing fixes</li>
+                        <li>Enabled developers to quickly identify and address issues by contributing to an end-to-end UI based testing software using Selenium, Python and Jenkins, reduced manual testing by 80%</li>
+                        <li>Minimized customer impact by proactively alerting on-call developers of issues by creating alert systems for key metrics such as error rate, saved 20% of their time</li>
                     </ul>
                 </Projects>
 
