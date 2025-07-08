@@ -145,7 +145,7 @@ class ProjectContainer extends React.Component {
 
                 <Projects
                     title="Security System"
-                    img="https://private-user-images.githubusercontent.com/25991050/323735297-5345f525-55eb-4739-8802-8f293897ffd6.jpg?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NTE5NDcwMjEsIm5iZiI6MTc1MTk0NjcyMSwicGF0aCI6Ii8yNTk5MTA1MC8zMjM3MzUyOTctNTM0NWY1MjUtNTVlYi00NzM5LTg4MDItOGYyOTM4OTdmZmQ2LmpwZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTA3MDglMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwNzA4VDAzNTIwMVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWE4NzljOTRmYjBhZjk4OWFhNjgyYzBhOTJmYzY2OTcyMGQxN2M1ZDE5ZGVmYWNiMmU2ZTY1MDk2MzdiMjU4MTAmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.egZVLjLGGtWvpVuCo_TSLKF6ix5xenImkepD5OpiVnI"
+                    img="https://github.com/Sajantoor/CMPT433-Project/assets/25991050/5345f525-55eb-4739-8802-8f293897ffd6"
                     caption="A security system leveraging the BeagleBone microcontroller"
                     linkText="View GitHub Repo"
                     link="https://github.com/Sajantoor/Embedded-Security-System"
