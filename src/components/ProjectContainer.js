@@ -41,8 +41,15 @@ class ProjectContainer extends React.Component {
         const Robotics = [{ link: null, component: <Cpp /> }, { link: "https://pros.cs.purdue.edu/", component: <img alt="PROS logo" src={PROS} /> }, { link: "https://www.vexrobotics.com/v5/competition", component: <img alt="VEX logo" src={VEX} /> }]
         const DiscordBot = [{ link: "https://www.typescriptlang.org/", component: <TypeScript /> }, { link: "https://nodejs.org/en/", component: <Node /> }, { link: "https://discord.com/", component: <Discord /> },]
 
-        // Java, Python, SpringGoot, Hystix, Selenium
-        const SapIcons = [
+        const sapFullTimeIcons = [
+            { link: "https://www.java.com/en/", component: <Java /> },
+            { link: "https://spring.io/projects/spring-boot", component: <SpringBoot /> },
+            { link: "https://resilience4j.readme.io/docs/getting-started-3", component: <img alt="Resilience4j logo" src="https://avatars.githubusercontent.com/u/26137419?s=200&v=4" /> },
+            { link: "https://projectreactor.io/", component: <img alt="Project Reactor logo" src="https://avatars.githubusercontent.com/u/4201559?s=200&v=4" /> },
+            { link: "https://nodejs.org/en/", component: <Node /> }
+        ]
+
+        const sapInternIcons = [
             { link: "https://www.java.com/en/", component: <Java /> },
             { link: "https://spring.io/projects/spring-boot", component: <SpringBoot /> },
             { link: "https://github.com/Netflix/Hystrix", component: <img alt="Hystrix logo" src="https://raw.githubusercontent.com/wiki/Netflix/Hystrix/images/hystrix-logo.png" /> },
@@ -63,7 +70,7 @@ class ProjectContainer extends React.Component {
         const stockerIcons = [
             { link: "https://vuejs.org/", component: <img alt="Vue logo" src="https://vuejs.org/images/logo.png" /> },
             { link: "https://firebase.google.com/", component: <img alt="Firebase logo" src="https://firebase.google.com/downloads/brand-guidelines/PNG/logo-logomark.png" /> },
-            { link: "https://expressjs.com/", component: <img alt="Express logo" src="https://expressjs.com/images/express-facebook-share.png" /> },
+            { link: "https://expressjs.com/", component: <img alt="Express logo" src="https://avatars.githubusercontent.com/u/5658226?s=200&v=4" /> },
             { link: "https://nodejs.org/en/", component: <Node /> }
         ]
 
@@ -80,20 +87,40 @@ class ProjectContainer extends React.Component {
             <div className="projectContainer" ref={this.myRef}>
                 <Projects
                     title="SAP"
-                    subtitle="Agile Developer Intern"
+                    subtitle="Software Developer"
                     img="https://c2.staticflickr.com/2/1598/25795483104_63bf2e1d58_b.jpg"
-                    caption="Jan 2022 - Sept 2022"
+                    caption="Jan 2025 - Present"
                     backgroundColor={"#4834d4"}
-                    icons={SapIcons}
+                    icons={sapFullTimeIcons}
                 >
                     <ul>
-                        <li>Developed fault-tolerant microservices, required to handle millions of requests, using Java, Spring Boot, JAX-RS, Apache, and Hystrix</li>
-                        <li>Implemented authorization APIs for SAP Cloud Platform, tested functionality and scalability with JUnit, Mockito, and JMeter</li>
-                        <li>Improved API response time by 60% by caching responses of slow upstream calls, reduced database calls by 20% and improved performance in downstream services</li>
-                        <li>Designed a Kubernetes based synthetic monitoring microservice for performing health checks on critical workflows, aimed at improving stability and reliability</li>
-                        <li>Resolved 15+ bugs in microservices by communicating with stakeholders, finding root causes, and developing fixes</li>
-                        <li>Enabled developers to quickly identify and address issues by contributing to an end-to-end UI based testing software using Selenium, Python and Jenkins, reduced manual testing by 80%</li>
-                        <li>Minimized customer impact by proactively alerting on-call developers of issues by creating alert systems for key metrics such as error rate, saved 20% of their time</li>
+                        <li>Developed cloud-native microservices <strong>handling millions of authentication, authorization, and routing requests</strong>, using Java, Spring Boot, Jakarta, Feign, Resilience4j, Hystrix, and Project Reactor, powering SAP infrastructure</li>
+                        <li><strong>Reduced request latency by 70%</strong> through asynchronous and non-blocking operations using <strong>Project Reactor</strong></li>
+                        <li>Resolved on-call issues by identifying root causes and deploying fixes, upholding SLAs and user satisfaction</li>
+                        <li>Built a browser extension for 1-click access to customer logs and tenant info, <strong>cutting incident response time by 15%</strong></li>
+                    </ul>
+                </Projects>
+
+                <Projects
+                    title="SAP"
+                    subtitle="Software Developer Intern"
+                    img="https://c2.staticflickr.com/2/1598/25795483104_63bf2e1d58_b.jpg"
+                    caption="May 2024 - Jan 2025 & Jan 2022 - Sept 2022"
+                    backgroundColor={"#557dff"}
+                    icons={sapInternIcons}
+                >
+                    <h4> May 2024 - Jan 2025</h4>
+                    <ul>
+                        <li>Engineered a full-stack feature to streamline Identity Provider (IdP) federation by developing and implementing new APIs in Java microservices and a JavaScript monolith, and developing a brand new user interface with SAPUI5</li>
+                        <li>Achieved <strong>60% faster API responses</strong> using Caffeine cache, boosting throughput and reducing database load by 20%</li>
+                        <li>Resolved a critical bug in the self-service SAML workflow preventing customers from logging in after configuring SAML SSO, by debugging complex authentication code and implementing a fix</li>
+                        <li>Migrated a legacy JavaScript codebase to TypeScript improving maintainability and developer productivity by <strong>20%</strong></li>
+                    </ul>
+                    <h4> Jan 2022 - Sept 2022</h4>
+                    <ul>
+                        <li>Designed a Kubernetes-based synthetic monitoring microservice for performing health checks on critical workflows, utilized publisher-subscriber pattern and RabbitMQ as the message-broker, ultimately improved product's reliability</li>
+                        <li>Enabled developers to quickly identify and address issues by developing an end-to-end UI-based testing software using Selenium, Python and Jenkins, <strong>reduced manual testing by 80%</strong></li>
+                        <li>Minimized customer impact by proactively alerting on-call developers of issues by creating alert systems for key metrics such as error rate, <strong>saved 20% of their time</strong></li>
                     </ul>
                 </Projects>
 
