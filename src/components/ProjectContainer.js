@@ -2,6 +2,7 @@ import React from 'react';
 // eslint-disable-next-line
 import styles from '../styles/projectContainer.css';
 import Projects from './Projects';
+import beagleBoneBeatBoxImage from '../assets/img/BeagleBone-BeatBox.png';
 // COVID
 import covidTrackerImage from '../assets/img/COVID-Tracker.png';
 import { ReactComponent as GoogleMaps } from '../assets/logos/GoogleMaps.svg';
@@ -55,6 +56,24 @@ class ProjectContainer extends React.Component {
             { link: "https://github.com/Netflix/Hystrix", component: <img alt="Hystrix logo" src="https://raw.githubusercontent.com/wiki/Netflix/Hystrix/images/hystrix-logo.png" /> },
             { link: "https://www.selenium.dev/", component: <img alt="Selenium logo" src="https://www.selenium.dev/images/selenium_logo_square_green.png" /> },
         ]
+
+        const securitySystemIcons = [
+            { link: "https://isocpp.org/", component: <Cpp /> },
+            { link: "https://cmake.org/", component: <img alt="CMake logo" src="https://upload.wikimedia.org/wikipedia/commons/1/13/Cmake.svg" /> },
+            { link: "https://www.linux.org/", component: <img alt="Linux logo" src="https://upload.wikimedia.org/wikipedia/commons/a/af/Tux.png" /> },
+            { link: "https://valgrind.org/", component: <img alt="Valgrind logo" src="https://valgrind.org/images/st-george-dragon.png" /> },
+            { link: "https://ffmpeg.org/", component: <img alt="FFmpeg logo" src="https://upload.wikimedia.org/wikipedia/commons/5/5f/FFmpeg_Logo_new.svg" /> },
+            { link: "https://nodejs.org/en/", component: <Node /> },
+            { link: "https://socket.io/", component: <img alt="Socket.io logo" src="https://socket.io/images/logo.svg" /> },
+        ]
+
+        const beagleboneBeatboxIcons = [
+            { link: "https://isocpp.org/", component: <Cpp /> },
+            { link: "https://cmake.org/", component: <img alt="CMake logo" src="https://upload.wikimedia.org/wikipedia/commons/1/13/Cmake.svg" /> },
+            { link: "https://www.linux.org/", component: <img alt="Linux logo" src="https://upload.wikimedia.org/wikipedia/commons/a/af/Tux.png" /> },
+            { link: "https://valgrind.org/", component: <img alt="Valgrind logo" src="https://valgrind.org/images/st-george-dragon.png" /> },
+            { link: "https://nodejs.org/en/", component: <Node /> },
+        ];
 
         const blockchainIcons = [
             { link: "https://www.rust-lang.org/", component: <Rust /> },
@@ -122,6 +141,42 @@ class ProjectContainer extends React.Component {
                         <li>Enabled developers to quickly identify and address issues by developing an end-to-end UI-based testing software using Selenium, Python and Jenkins, <strong>reduced manual testing by 80%</strong></li>
                         <li>Minimized customer impact by proactively alerting on-call developers of issues by creating alert systems for key metrics such as error rate, <strong>saved 20% of their time</strong></li>
                     </ul>
+                </Projects>
+
+                <Projects
+                    title="Security System"
+                    img="https://private-user-images.githubusercontent.com/25991050/323735297-5345f525-55eb-4739-8802-8f293897ffd6.jpg?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NTE5NDcwMjEsIm5iZiI6MTc1MTk0NjcyMSwicGF0aCI6Ii8yNTk5MTA1MC8zMjM3MzUyOTctNTM0NWY1MjUtNTVlYi00NzM5LTg4MDItOGYyOTM4OTdmZmQ2LmpwZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTA3MDglMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwNzA4VDAzNTIwMVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWE4NzljOTRmYjBhZjk4OWFhNjgyYzBhOTJmYzY2OTcyMGQxN2M1ZDE5ZGVmYWNiMmU2ZTY1MDk2MzdiMjU4MTAmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.egZVLjLGGtWvpVuCo_TSLKF6ix5xenImkepD5OpiVnI"
+                    caption="A security system leveraging the BeagleBone microcontroller"
+                    linkText="View GitHub Repo"
+                    link="https://github.com/Sajantoor/Embedded-Security-System"
+                    icons={securitySystemIcons}
+                    backgroundColor={"#d64b5b"}
+                >
+                    <ul>
+                        <li>Led a team in the development of an embedded security system which monitors and controls access to a room leveraging the BeagleBone microcontroller</li>
+                        <li>Integrated several hardware components such as a motorized lock utilizing GPIO and I2C for communication</li>
+                        <li>Built a web app enabling real-time system monitoring and control, leveraging UDP sockets and WebSockets</li>
+                        <li>Implemented a low latency video streaming server using FFmpeg and Node.js to stream video from the camera</li>
+                    </ul>
+                </Projects>
+
+                <Projects
+                    title="BeagleBone BeatBox"
+                    img={beagleBoneBeatBoxImage}
+                    caption="Filtering noise, amplifying clarity"
+                    linkText="View GitHub Repo"
+                    link="https://github.com/Sajantoor/BeagleBone-Beat-Box"
+                    icons={beagleboneBeatboxIcons}
+                    backgroundColor={"#1289A7"}
+                >
+                    <ul>
+                        <li>Developed a beat-box application in C++ for the BeagleBone microcontroller, leveraging the ALSA API for real-time audio generation and low-latency playback of various beats</li>
+                        <li>Integrated accelerometer input for air-drumming functionality, detecting accelerations to trigger sounds accurately</li>
+                        <li>Implemented debounced joystick input for precise tempo and volume control via GPIO and I2C interfaces</li>
+                        <li>Crafted a Node.js server to allow users to monitor and control the application via UDP sockets and WebSockets</li>
+                        <li>Utilized CMake for cross-compilation on a Linux host and Valgrind for memory safety and leak prevention</li>
+                    </ul>
+
                 </Projects>
 
                 <Projects
