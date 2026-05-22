@@ -113,10 +113,16 @@ class ProjectContainer extends React.Component {
                     icons={sapFullTimeIcons}
                 >
                     <ul>
-                        <li>Developed cloud-native microservices <strong>handling millions of authentication, authorization, and routing requests</strong>, using Java, Spring Boot, Jakarta, Feign, Resilience4j, Hystrix, and Project Reactor, powering SAP infrastructure</li>
-                        <li><strong>Reduced request latency by 70%</strong> through asynchronous and non-blocking operations using <strong>Project Reactor</strong></li>
-                        <li>Resolved on-call issues by identifying root causes and deploying fixes, upholding SLAs and user satisfaction</li>
-                        <li>Built a browser extension for 1-click access to customer logs and tenant info, <strong>cutting incident response time by 15%</strong></li>
+                        <li>Developed cloud-native microservices handling <strong>millions of authentication, authorization, and routing requests</strong>, using Java, Spring Boot, Resilience4j, Jakarta, Feign, and Project Reactor, powering SAP core infrastructure</li>
+                        <li>Designed an end-to-end testing CI/CD pipeline with multi-agent orchestration to detect regressions by analyzing test results, metrics, logs and traces, enabling AI agents and developers to contribute code with more confidence</li>
+                        <li>Built a full stack bundled authentication feature, enabling single identity provider (IdP) across multiple SAP products, simplified IdP federation and identity management, powered by OpenID Connect</li>
+                        <li>Improved performance of IdP switching workflows by <strong>50x</strong> by optimizing database queries and batching user updates</li>
+                        <li>Created a browser extension that analyzes HAR and SAML files, enabling support teams to <strong>self-resolve 90%</strong> of authentication issues, significantly reducing developer on-call load, <strong>cutting resolution time by over 50%</strong></li>
+                        <li>Led the team in the number of production bugs resolved over the year</li>
+                        <li>Prevented long-term data growth and infrastructure costs by fixing a data orphaning issue early in production</li>
+                        <li>Automated new data center configuration, reducing time from 15 minutes to 10 seconds and eliminating human error</li>
+                        <li><strong>Reduced request latency by 70%</strong> through asynchronous and non-blocking operations using Project Reactor</li>
+                        <li>Saved 1 hour per developer per sprint across 12 teams by automating release branching, versioning, and changelogs</li>
                     </ul>
                 </Projects>
 
@@ -130,7 +136,6 @@ class ProjectContainer extends React.Component {
                 >
                     <h4> May 2024 - Jan 2025</h4>
                     <ul>
-                        <li>Engineered a full-stack feature to streamline Identity Provider (IdP) federation by developing and implementing new APIs in Java microservices and a JavaScript monolith, and developing a brand new user interface with SAPUI5</li>
                         <li>Achieved <strong>60% faster API responses</strong> using Caffeine cache, boosting throughput and reducing database load by 20%</li>
                         <li>Resolved a critical bug in the self-service SAML workflow preventing customers from logging in after configuring SAML SSO, by debugging complex authentication code and implementing a fix</li>
                         <li>Migrated a legacy JavaScript codebase to TypeScript improving maintainability and developer productivity by <strong>20%</strong></li>
