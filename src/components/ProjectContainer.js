@@ -106,7 +106,7 @@ class ProjectContainer extends React.Component {
             <div className="projectContainer" ref={this.myRef}>
                 <Projects
                     title="SAP"
-                    subtitle="Software Developer"
+                    subtitle="Software Engineer"
                     img="https://c2.staticflickr.com/2/1598/25795483104_63bf2e1d58_b.jpg"
                     caption="Jan 2025 - Present"
                     backgroundColor={"#4834d4"}
@@ -122,7 +122,7 @@ class ProjectContainer extends React.Component {
 
                 <Projects
                     title="SAP"
-                    subtitle="Software Developer Intern"
+                    subtitle="Software Engineer Intern"
                     img="https://c2.staticflickr.com/2/1598/25795483104_63bf2e1d58_b.jpg"
                     caption="May 2024 - Jan 2025 & Jan 2022 - Sept 2022"
                     backgroundColor={"#557dff"}

@@ -18,7 +18,7 @@ class About extends React.Component {
           </div>
           <h1 className="backgroundText"> About </h1>
           <p>
-            Hi, I'm a Software Developer at SAP and a recent Computer Science
+            Hi, I'm a Software Engineer at SAP and a recent Computer Science
             graduate from Simon Fraser University. I'm passionate about software engineering,
             backend development, and distributed systems. I'm always looking for new
             opportunities to learn and grow as a developer.

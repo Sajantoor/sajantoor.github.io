@@ -10,7 +10,7 @@ class Landing extends React.Component {
     super(props);
 
     this.state = {
-      subtitle: ["Software Developer"],
+      subtitle: ["Software Engineer"],
       index: 0,
       currentWord: null,
       wordIndex: 0,
